@@ -5,7 +5,6 @@ set -e
 # EXTRA_FLAGS="--include-podspecs='RxSwift.podspec'"
 
 TARGET=$1
-SWIFT_VERSION=5.0
 
 case $TARGET in
 "GDSwift"*)

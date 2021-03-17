@@ -2,17 +2,14 @@ PODS:
   - GDSwift (0.0.1):
     - GDSwift/Core (= 0.0.1)
   - GDSwift/Core (0.0.1)
-  - MBProgressHUD (1.2.0)
   - SnapKit (4.2.0)
 
 DEPENDENCIES:
   - GDSwift (from `./`)
-  - MBProgressHUD
   - SnapKit
 
 SPEC REPOS:
   trunk:
-    - MBProgressHUD
     - SnapKit
 
 EXTERNAL SOURCES:
@@ -20,10 +17,9 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  GDSwift: 8d17bec02af790f12108f407009ee6c09cc03046
-  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  GDSwift: a2424df36c331fa0411ea92b069ac89ec04f9602
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 24c95af33c308ebd05e2b77d5fe82400c6f5f60c
+PODFILE CHECKSUM: 0c5330d18622f5e5bdd8d10afb50580d0ac6d981
 
 COCOAPODS: 1.10.1

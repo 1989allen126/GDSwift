@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'GDSwift'
-  s.version          = '0.0.1'
+  s.version          = "0.0.1"
   s.summary          = '常见工具类封装'
 
 
@@ -28,7 +28,6 @@ GDSwift集成常用组件
   
   s.subspec "Widgets" do |ss|
     ss.source_files  = "GDSwift/Classes/Widgets/**/*"
-    ss.dependency "MBProgressHUD"
     ss.dependency "SnapKit"
   end
 

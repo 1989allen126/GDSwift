@@ -8,7 +8,6 @@
 
 import UIKit
 import SnapKit
-import MBProgressHUD
 
 class GDPopView: UIView {
 

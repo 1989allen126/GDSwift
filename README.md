@@ -10,3 +10,6 @@ fastlane pushGit version:0.0.1 message:"初始化项目"
 ./scripts/profile-build-times.sh
 
 ##1.3 测试启动时间
+
+
+$(MARKETING_VERSION)

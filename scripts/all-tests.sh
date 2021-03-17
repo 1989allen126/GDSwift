@@ -48,20 +48,23 @@ function ensureVersionEqual() {
 function ensureNoGitChanges() {
 	if [ `(git add . && git diff HEAD && git reset) | wc -l` -gt 0 ]; then
 		echo $1
-		exit -1
+		#exit -1
 	fi
 }
 
 function checkPlistVersions() {
-	GDSWIFT_VERSION=`cat GDSwift.podspec | grep -E "s.version\s+=" | cut -d '"' -f 2`
+	GDSwift_VERSION=`cat GDSwift.podspec | grep -E "s.version.*=" | cut -d '"' -f2`
 	echo "GDSwift version: ${GDSwift_VERSION}"
-	PROJECTS=(GDSwift  GDSwift_Tests)
+	PROJECTS=(GDSwift)
 	for project in ${PROJECTS[@]}
 	do
 		echo "Checking version for ${project}"
 		PODSPEC_VERSION=`cat $project.podspec | grep -E "s.version\s+=" | cut -d '"' -f 2`
 		ensureVersionEqual "$GDSwift_VERSION" "$PODSPEC_VERSION" "${project} version not equal"
-		PLIST_VERSION=`defaults read  "\`pwd\`/${project}/Info.plist" CFBundleShortVersionString`
+		#PLIST_VERSION=`defaults read  "\`pwd\`/${project}/Info.plist" CFBundleShortVersionString`
+		INFO_PLIST="\`pwd\`/Example/Info.plist"
+		PLIST_VERSION=`/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString"  $INFO_PLIST`
+		echo "PLIST_VERSION: ${PLIST_VERSION}"
 		if ! ( [[ ${GDSwift_VERSION} = *"-"* ]] || [[ "${PLIST_VERSION}" == "${GDSwift_VERSION}" ]] ) ; then
 			echo "Invalid version for `pwd`/${project}/Info.plist: ${PLIST_VERSION}"
           	exit -1
@@ -69,15 +72,11 @@ function checkPlistVersions() {
 	done
 }
 
-ensureNoGitChanges "Please make sure the working tree is clean. Use \`git status\` to check."
-if [[ "${UNIX_NAME}" == "${DARWIN}" ]]; then
-	checkPlistVersions
-fi
-
 CONFIGURATIONS=(Release-Tests)
 
+ensureNoGitChanges "Please make sure the working tree is clean. Use \`git status\` to check."
 if [ "${RELEASE_TEST}" -eq 1 ]; then
-	CONFIGURATIONS=(Debug Release Release-Tests)
+	CONFIGURATIONS=(Debug Release)
 fi
 
 if [ "${VALIDATE_PODS}" -eq 1 ]; then
@@ -86,7 +85,7 @@ fi
 
 if [ "${VALIDATE_IOS_EXAMPLE}" -eq 1 ]; then
 	if [[ "${UNIX_NAME}" == "${DARWIN}" ]]; then
-		for scheme in "GDSwift_Tests"
+		for scheme in "GDSwift_Example"
 		do
 			for configuration in "Debug"
 			do
@@ -107,7 +106,7 @@ if [ "${VALIDATE_IOS}" -eq 1 ]; then
 		#make sure all iOS tests pass
 		for configuration in ${CONFIGURATIONS[@]}
 		do
-			gd "AllTests-iOS" ${configuration} "${DEFAULT_IOS_SIMULATOR}" test
+			gd "GDSwift_Tests" ${configuration} "${DEFAULT_IOS_SIMULATOR}" test
 		done
 	elif [[ "${UNIX_NAME}" == "${LINUX}" ]]; then
 		unsupported_target

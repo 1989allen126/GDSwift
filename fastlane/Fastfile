@@ -47,10 +47,25 @@ lane :release do |options|
 
   target_version = options[:version]
   version_message = options[:message]
+  
+  # repo 
+	target_repoName = options[:repo]
+	# podspec
+  target_podspec_name = options[:podspec]
+  
+  if target_repoName.nil?
+		target_repoName = "AllenSpecs"
+  end
+  
+  # HSBKit
+  if target_podspec_name.nil?
+		target_podspec_name = "GDSwift.podspec"
+  end
+  
   raise "The version is missed. Use `fastlane release version:{version_number}`.`" if target_version.nil?
   
   version_bump_podspec(
-    path: "GDSwift.podspec", 
+    path: target_podspec_name, 
     version_number: target_version
   )
 
@@ -79,6 +94,8 @@ lane :release do |options|
 
   pod_lib_lint(allow_warnings: true)
 
-  pod_push
+  #pod_push
+  # pod_repo_push(repo: target_repoName, podspec: "#{target_podspec_name}")
+	pod_push(path: "#{target_podspec_name}", repo: "#{target_repoName}", allow_warnings: true,skip_import_validation:true)
 
 end

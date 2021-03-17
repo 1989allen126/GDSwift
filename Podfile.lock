@@ -1,0 +1,18 @@
+PODS:
+  - GDSwift (0.0.1):
+    - GDSwift/Core (= 0.0.1)
+  - GDSwift/Core (0.0.1)
+
+DEPENDENCIES:
+  - GDSwift (from `./`)
+
+EXTERNAL SOURCES:
+  GDSwift:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  GDSwift: 4403fd91dd1098bf3a40c1e2351e803da5803a0d
+
+PODFILE CHECKSUM: c5ba8d97faca3a54b0019072865082d84622fc60
+
+COCOAPODS: 1.10.1

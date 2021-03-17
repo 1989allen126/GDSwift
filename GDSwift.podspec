@@ -18,7 +18,7 @@ GDSwift集成常用组件
   #s.resource     = ['GDSwift/Resource/*']
   #s.resource = ['GDSwift/Resource/Assets']
   #s.resource_bundle = { 'GDSwiftResourceBundle' => ['GDSwift/Resource/*'] }
-#s.source_files = 'GDSwift/Classes/**/*'
+  #s.source_files = 'GDSwift/Classes/**/*'
 
   s.default_subspec = "Core"
 

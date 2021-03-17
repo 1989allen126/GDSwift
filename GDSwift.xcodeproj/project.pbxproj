@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18FDC97E26022F4500840378 /* GDSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 18FDC97C26022F4400840378 /* GDSwift.h */; };
+		18FDC97E26022F4500840378 /* GDSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 18FDC97C26022F4400840378 /* GDSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		18FDC9AD2602309C00840378 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FDC9A12602309C00840378 /* LaunchScreen.xib */; };
 		18FDC9AE2602309C00840378 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FDC9A32602309C00840378 /* Main.storyboard */; };
 		18FDC9AF2602309C00840378 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18FDC9A52602309C00840378 /* Images.xcassets */; };
@@ -15,9 +15,16 @@
 		18FDC9B12602309C00840378 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDC9A82602309C00840378 /* Logger.swift */; };
 		18FDC9B22602309C00840378 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDC9AA2602309C00840378 /* ViewController.swift */; };
 		18FDC9B32602309C00840378 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDC9AB2602309C00840378 /* BaseViewController.swift */; };
+		18FDCA432602410300840378 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDCA422602410300840378 /* UIView+Extension.swift */; };
+		18FDCA4A2602411200840378 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDCA492602411200840378 /* UILabel+Extension.swift */; };
+		18FDCA4E2602412300840378 /* UITextfield+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDCA4D2602412300840378 /* UITextfield+Extension.swift */; };
+		18FDCA522602413600840378 /* GDTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDCA512602413600840378 /* GDTheme.swift */; };
+		18FDCA562602415C00840378 /* GDLanguageLocalize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDCA552602415C00840378 /* GDLanguageLocalize.swift */; };
+		18FDCA5A2602416F00840378 /* GDConstantAndMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDCA592602416F00840378 /* GDConstantAndMacro.swift */; };
+		18FDCA62260241A200840378 /* GDSecurityTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDCA61260241A200840378 /* GDSecurityTools.swift */; };
+		18FDCA66260241CD00840378 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDCA65260241CD00840378 /* String+Extension.swift */; };
+		18FDCA742602426200840378 /* GDPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDCA732602426200840378 /* GDPopView.swift */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		B26EA2811360891ED0ACBB50 /* Pods_GDSwift_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED2E958B40E2FD958147493 /* Pods_GDSwift_Tests.framework */; };
-		DB2767A7E54EE780E1232AC3 /* Pods_GDSwift_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F009329DEEF526F157AF934 /* Pods_GDSwift_Example.framework */; };
 		FD846F222233A5E10038A715 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FD846F1F2233A5E10038A715 /* README.md */; };
 		FD846F232233A5E10038A715 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FD846F202233A5E10038A715 /* LICENSE */; };
 		FD846F242233A5E10038A715 /* GDSwift.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FD846F212233A5E10038A715 /* GDSwift.podspec */; };
@@ -47,6 +54,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		02A33E58879E1CFFC6F2C422 /* Pods-GDSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDSwift.release.xcconfig"; path = "Target Support Files/Pods-GDSwift/Pods-GDSwift.release.xcconfig"; sourceTree = "<group>"; };
+		1622AF67DA9A45A65CAA8231 /* Pods-GDSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDSwift.debug.xcconfig"; path = "Target Support Files/Pods-GDSwift/Pods-GDSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		18FDC97C26022F4400840378 /* GDSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSwift.h; sourceTree = "<group>"; };
 		18FDC97D26022F4400840378 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18FDC9A22602309C00840378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -57,9 +66,17 @@
 		18FDC9AA2602309C00840378 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18FDC9AB2602309C00840378 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		18FDC9AC2602309C00840378 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2ED2E958B40E2FD958147493 /* Pods_GDSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GDSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18FDCA422602410300840378 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		18FDCA492602411200840378 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		18FDCA4D2602412300840378 /* UITextfield+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextfield+Extension.swift"; sourceTree = "<group>"; };
+		18FDCA512602413600840378 /* GDTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDTheme.swift; sourceTree = "<group>"; };
+		18FDCA552602415C00840378 /* GDLanguageLocalize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDLanguageLocalize.swift; sourceTree = "<group>"; };
+		18FDCA592602416F00840378 /* GDConstantAndMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDConstantAndMacro.swift; sourceTree = "<group>"; };
+		18FDCA61260241A200840378 /* GDSecurityTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDSecurityTools.swift; sourceTree = "<group>"; };
+		18FDCA65260241CD00840378 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		18FDCA732602426200840378 /* GDPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDPopView.swift; sourceTree = "<group>"; };
+		18FDCA832602436000840378 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4F377A2A2E972B2C69544FF7 /* Pods-GDSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDSwift_Example.release.xcconfig"; path = "Target Support Files/Pods-GDSwift_Example/Pods-GDSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
-		5F009329DEEF526F157AF934 /* Pods_GDSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GDSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* GDSwift_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDSwift_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACE51AFB9204008FA782 /* GDSwift_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GDSwift_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,7 +96,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD846FC82233CA7B0038A715 /* GDSwift.framework in Frameworks */,
-				DB2767A7E54EE780E1232AC3 /* Pods_GDSwift_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +103,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B26EA2811360891ED0ACBB50 /* Pods_GDSwift_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +129,12 @@
 		18FDC97826022F4400840378 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				18FDCA6C2602420300840378 /* Helper */,
+				18FDCA6B260241EE00840378 /* Constant */,
+				18FDCA6A260241DE00840378 /* Theme */,
+				18FDCA69260241D700840378 /* Tools */,
+				18FDCA41260240D500840378 /* UIKit */,
+				18FDCA40260240CE00840378 /* Foundation */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -121,6 +142,12 @@
 		18FDC97926022F4400840378 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				18FDCA722602423700840378 /* CycleView */,
+				18FDCA712602422300840378 /* Marquee */,
+				18FDCA702602421B00840378 /* Photo */,
+				18FDCA6F2602421500840378 /* Address */,
+				18FDCA6E2602420E00840378 /* PickerView */,
+				18FDCA6D2602420900840378 /* PopView */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -183,6 +210,99 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		18FDCA40260240CE00840378 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				18FDCA65260241CD00840378 /* String+Extension.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		18FDCA41260240D500840378 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				18FDCA422602410300840378 /* UIView+Extension.swift */,
+				18FDCA492602411200840378 /* UILabel+Extension.swift */,
+				18FDCA4D2602412300840378 /* UITextfield+Extension.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		18FDCA69260241D700840378 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				18FDCA61260241A200840378 /* GDSecurityTools.swift */,
+				18FDCA552602415C00840378 /* GDLanguageLocalize.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		18FDCA6A260241DE00840378 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				18FDCA512602413600840378 /* GDTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		18FDCA6B260241EE00840378 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				18FDCA592602416F00840378 /* GDConstantAndMacro.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		18FDCA6C2602420300840378 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		18FDCA6D2602420900840378 /* PopView */ = {
+			isa = PBXGroup;
+			children = (
+				18FDCA732602426200840378 /* GDPopView.swift */,
+			);
+			path = PopView;
+			sourceTree = "<group>";
+		};
+		18FDCA6E2602420E00840378 /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
+		18FDCA6F2602421500840378 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		18FDCA702602421B00840378 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		18FDCA712602422300840378 /* Marquee */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Marquee;
+			sourceTree = "<group>";
+		};
+		18FDCA722602423700840378 /* CycleView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CycleView;
+			sourceTree = "<group>";
+		};
 		401B0BFDE62033305017454C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,14 +310,16 @@
 				4F377A2A2E972B2C69544FF7 /* Pods-GDSwift_Example.release.xcconfig */,
 				7EFD5E485985332D2B3DD289 /* Pods-GDSwift_Tests.debug.xcconfig */,
 				BED7D1FD7DCB9E13F07026A7 /* Pods-GDSwift_Tests.release.xcconfig */,
+				1622AF67DA9A45A65CAA8231 /* Pods-GDSwift.debug.xcconfig */,
+				02A33E58879E1CFFC6F2C422 /* Pods-GDSwift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				18FDCA832602436000840378 /* README.md */,
 				FD846F552233AED40038A715 /* Sources */,
 				18FDC99F2602309C00840378 /* Example for GDSwift */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
@@ -248,8 +370,6 @@
 		72B31B5C6106E14F95F197CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5F009329DEEF526F157AF934 /* Pods_GDSwift_Example.framework */,
-				2ED2E958B40E2FD958147493 /* Pods_GDSwift_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -287,6 +407,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				FD846FCB2233CA9D0038A715 /* CopyFiles */,
+				A6C50E3C12A3D554302D99D6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -320,6 +441,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD846F732233AF970038A715 /* Build configuration list for PBXNativeTarget "GDSwift" */;
 			buildPhases = (
+				CD9C7E8462CD176BD4CFF71A /* [CP] Check Pods Manifest.lock */,
 				FD846F692233AF970038A715 /* Headers */,
 				FD846F6A2233AF970038A715 /* Sources */,
 				FD846F6B2233AF970038A715 /* Frameworks */,
@@ -358,6 +480,7 @@
 					};
 					FD846F6D2233AF970038A715 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1240;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -436,6 +559,46 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A6C50E3C12A3D554302D99D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GDSwift_Example/Pods-GDSwift_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GDSwift/GDSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GDSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GDSwift_Example/Pods-GDSwift_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD9C7E8462CD176BD4CFF71A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GDSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		ECC300BC958FA37AEFE91013 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -484,6 +647,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18FDCA66260241CD00840378 /* String+Extension.swift in Sources */,
+				18FDCA4E2602412300840378 /* UITextfield+Extension.swift in Sources */,
+				18FDCA5A2602416F00840378 /* GDConstantAndMacro.swift in Sources */,
+				18FDCA4A2602411200840378 /* UILabel+Extension.swift in Sources */,
+				18FDCA62260241A200840378 /* GDSecurityTools.swift in Sources */,
+				18FDCA522602413600840378 /* GDTheme.swift in Sources */,
+				18FDCA742602426200840378 /* GDPopView.swift in Sources */,
+				18FDCA562602415C00840378 /* GDLanguageLocalize.swift in Sources */,
+				18FDCA432602410300840378 /* UIView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -715,10 +887,12 @@
 		};
 		FD846F742233AF970038A715 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1622AF67DA9A45A65CAA8231 /* Pods-GDSwift.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -750,6 +924,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -759,10 +934,12 @@
 		};
 		FD846F752233AF970038A715 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02A33E58879E1CFFC6F2C422 /* Pods-GDSwift.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;

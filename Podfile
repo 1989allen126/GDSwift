@@ -1,5 +1,15 @@
 use_frameworks!
 
+
+
+target 'GDSwift' do
+    
+  # GDSwift
+  pod 'SnapKit'
+  pod 'MBProgressHUD'
+  
+end
+
 target 'GDSwift_Example' do
     
   # GDSwift

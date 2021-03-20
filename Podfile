@@ -14,7 +14,8 @@ target 'GDSwift' do
 end
 
 target 'GDSwift_Example' do
-    
+  
+  pod 'SnapKit'
   # GDSwift
-  pod 'GDSwift', :path => './'
+  #pod 'GDSwift', :path => './'
 end

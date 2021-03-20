@@ -1,25 +1,16 @@
 PODS:
-  - GDSwift (0.0.1):
-    - GDSwift/Core (= 0.0.1)
-  - GDSwift/Core (0.0.1)
   - SnapKit (4.2.0)
 
 DEPENDENCIES:
-  - GDSwift (from `./`)
   - SnapKit
 
 SPEC REPOS:
   trunk:
     - SnapKit
 
-EXTERNAL SOURCES:
-  GDSwift:
-    :path: "./"
-
 SPEC CHECKSUMS:
-  GDSwift: a2424df36c331fa0411ea92b069ac89ec04f9602
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 0c5330d18622f5e5bdd8d10afb50580d0ac6d981
+PODFILE CHECKSUM: c57d1c3ede3274e38bafd1affaa17d06e751cf80
 
 COCOAPODS: 1.10.1

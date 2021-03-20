@@ -15,7 +15,7 @@ GDSwift集成常用组件
 
   s.ios.deployment_target = '9.0'
   s.swift_version         = '5.0'
-  #s.resource     = ['GDSwift/Resource/*']
+  s.resource     = ['GDSwift/Resource/*']
   #s.resource = ['GDSwift/Resource/Assets']
   #s.resource_bundle = { 'GDSwiftResourceBundle' => ['GDSwift/Resource/*'] }
   #s.source_files = 'GDSwift/Classes/**/*'

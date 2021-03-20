@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18A516212602EAF900425CC6 /* GD.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A516202602EAF800425CC6 /* GD.generated.swift */; };
+		18A516252602EE3000425CC6 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A516242602EE3000425CC6 /* Bundle+Extension.swift */; };
+		18A516292602F17100425CC6 /* UIColor+HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A516282602F17100425CC6 /* UIColor+HexString.swift */; };
 		18FDC97E26022F4500840378 /* GDSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 18FDC97C26022F4400840378 /* GDSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		18FDC9AD2602309C00840378 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FDC9A12602309C00840378 /* LaunchScreen.xib */; };
 		18FDC9AE2602309C00840378 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FDC9A32602309C00840378 /* Main.storyboard */; };
@@ -68,6 +71,9 @@
 		02A33E58879E1CFFC6F2C422 /* Pods-GDSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDSwift.release.xcconfig"; path = "Target Support Files/Pods-GDSwift/Pods-GDSwift.release.xcconfig"; sourceTree = "<group>"; };
 		07DE5BE81FD5C82CA398B81D /* Pods_GDSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GDSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1622AF67DA9A45A65CAA8231 /* Pods-GDSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDSwift.debug.xcconfig"; path = "Target Support Files/Pods-GDSwift/Pods-GDSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		18A516202602EAF800425CC6 /* GD.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GD.generated.swift; sourceTree = "<group>"; };
+		18A516242602EE3000425CC6 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		18A516282602F17100425CC6 /* UIColor+HexString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexString.swift"; sourceTree = "<group>"; };
 		18FDC97C26022F4400840378 /* GDSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSwift.h; sourceTree = "<group>"; };
 		18FDC97D26022F4400840378 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18FDC9A22602309C00840378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -100,7 +106,7 @@
 		F720910C5EC6243CCE6D99BA /* Pods-GDSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDSwift_Example.debug.xcconfig"; path = "Target Support Files/Pods-GDSwift_Example/Pods-GDSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FD846F1F2233A5E10038A715 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FD846F202233A5E10038A715 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		FD846F212233A5E10038A715 /* GDSwift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GDSwift.podspec; sourceTree = "<group>"; };
+		FD846F212233A5E10038A715 /* GDSwift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GDSwift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FD846F6E2233AF970038A715 /* GDSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GDSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -134,6 +140,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18A5162C2602F6DF00425CC6 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		18FDC97726022F4400840378 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +160,7 @@
 		18FDC97826022F4400840378 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				18A5162C2602F6DF00425CC6 /* Protocol */,
 				18FDCA6C2602420300840378 /* Helper */,
 				18FDCA6B260241EE00840378 /* Constant */,
 				18FDCA6A260241DE00840378 /* Theme */,
@@ -232,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				18FDCA65260241CD00840378 /* String+Extension.swift */,
+				18A516282602F17100425CC6 /* UIColor+HexString.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -251,6 +266,8 @@
 			children = (
 				18FDCA61260241A200840378 /* GDSecurityTools.swift */,
 				18FDCA552602415C00840378 /* GDLanguageLocalize.swift */,
+				18A516202602EAF800425CC6 /* GD.generated.swift */,
+				18A516242602EE3000425CC6 /* Bundle+Extension.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -681,12 +698,15 @@
 				18FDCA66260241CD00840378 /* String+Extension.swift in Sources */,
 				18FDCA4E2602412300840378 /* UITextfield+Extension.swift in Sources */,
 				18FDCA5A2602416F00840378 /* GDConstantAndMacro.swift in Sources */,
+				18A516252602EE3000425CC6 /* Bundle+Extension.swift in Sources */,
 				18FDCA4A2602411200840378 /* UILabel+Extension.swift in Sources */,
 				18FDCA62260241A200840378 /* GDSecurityTools.swift in Sources */,
+				18A516292602F17100425CC6 /* UIColor+HexString.swift in Sources */,
 				18FDCA522602413600840378 /* GDTheme.swift in Sources */,
 				18FDCA742602426200840378 /* GDPopView.swift in Sources */,
 				18FDCA562602415C00840378 /* GDLanguageLocalize.swift in Sources */,
 				18FDCA432602410300840378 /* UIView+Extension.swift in Sources */,
+				18A516212602EAF900425CC6 /* GD.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

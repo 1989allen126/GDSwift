@@ -8,6 +8,8 @@
 
 import UIKit
 import AVFoundation
+import CoreServices
+import AVFoundation
 
 class GDCapturePhotoBaseViewController: GDPhotoBaseViewController {
     

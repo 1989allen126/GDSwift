@@ -6,7 +6,7 @@
 
 import UIKit
 
-public class GD {
+open class GD {
     fileprivate class Class {}
     
     public static let hostingBundle = Bundle(for: GD.Class.self)

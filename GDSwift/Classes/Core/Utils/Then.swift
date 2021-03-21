@@ -16,7 +16,7 @@ import Foundation
 
 public protocol Then {}
 
-extension Then where Self: Any {
+public extension Then where Self: Any {
 
   /// Makes it available to set properties with closures just after initializing and copying the value types.
   ///

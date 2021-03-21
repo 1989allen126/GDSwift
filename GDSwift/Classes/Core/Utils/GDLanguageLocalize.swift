@@ -16,9 +16,9 @@ public  func  GDLocalizedString(key:String) -> String {
     return value
 }
 
-extension Bundle {
+public extension Bundle {
     
-    public class var hostingBundle: Bundle {
+    class var hostingBundle: Bundle {
         struct Static {
             static let __bundle: Bundle = GD.hostingBundle
         }
@@ -26,7 +26,7 @@ extension Bundle {
         return Static.__bundle
     }
     
-    public static func gd_localized(_ key:String,value:String? = nil) -> String? {
+    static func gd_localized(_ key:String,value:String? = nil) -> String? {
         var bundle:Bundle? = nil
     
         if bundle == nil {

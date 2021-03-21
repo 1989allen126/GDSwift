@@ -43,19 +43,22 @@ func checkCameraAuthStatusEx(_ handle: ((Bool) -> Void)? = nil) {
 
 /// 快速打开url
 /// - Parameter content: 需要跳转的url
-func GDOpenURL(content:String) {
-    guard !content.isEmpty,let url = URL(string:content) else {
-        return
-    }
-    
+func GDOpenURL(url:URL) {
     if UIApplication.shared.canOpenURL(url) {
-        UIApplication.shared.openURL(url)
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
     }
 }
 
 /// 打开系统设置页面
 func GDOpenURLSetting() {
-    GDOpenURL(content: UIApplication.openSettingsURLString)
+    guard let url = URL(string: UIApplication.openSettingsURLString) else {
+        return
+    }
+    GDOpenURL(url:url)
 }
 
 /// 判断字符串是否为空

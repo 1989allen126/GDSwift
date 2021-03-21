@@ -42,7 +42,7 @@ class GDNavigator {
         case .viewController(let vc):
             return vc
         case .safari(let url):
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            GDOpenURL(url: url)
             return nil
 
         case .safariController(let url):

@@ -1,8 +1,17 @@
 PODS:
+  - GDSwift (0.0.1):
+    - GDSwift/Core (= 0.0.1)
+    - GDSwift/Widgets (= 0.0.1)
+  - GDSwift/Core (0.0.1)
+  - GDSwift/Widgets (0.0.1):
+    - GDSwift/Core
+    - Hero
+    - SnapKit
   - Hero (1.6.1)
-  - SnapKit (4.2.0)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
+  - GDSwift (from `./`)
   - Hero
   - SnapKit
 
@@ -11,10 +20,15 @@ SPEC REPOS:
     - Hero
     - SnapKit
 
-SPEC CHECKSUMS:
-  Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
-  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+EXTERNAL SOURCES:
+  GDSwift:
+    :path: "./"
 
-PODFILE CHECKSUM: cfdbccfda94cf9e9389038f4b07184aab78c19d6
+SPEC CHECKSUMS:
+  GDSwift: e2ac113a113eec3eae9692fa8ae6c250571df926
+  Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: c062f3acb9529dfd10a3001cdf1718b37118e297
 
 COCOAPODS: 1.10.1

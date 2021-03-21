@@ -1,4 +1,4 @@
-platform :ios, '10.0'
+platform :ios, '9.0'
 
 use_frameworks!
 
@@ -25,9 +25,9 @@ end
 
 target 'GDSwift_Example' do
   
-  gd_common_pods
+  #gd_common_pods
   # GDSwift
-  #pod 'GDSwift', :path => './'
+  pod 'GDSwift', :path => './'
 end
 
 post_install do |installer|

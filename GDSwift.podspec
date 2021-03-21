@@ -27,7 +27,7 @@ GDSwift集成常用组件
   }
   s.source_files = 'GDSwift/Classes/**/*'
 
-  s.default_subspec = "Core"
+  #s.default_subspec = "Core"
 
   s.subspec "Core" do |ss|
     ss.source_files  = "GDSwift/Classes/Core/**/*"

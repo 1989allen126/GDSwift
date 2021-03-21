@@ -24,12 +24,12 @@ public class GDFakeNavigationBar: UIView {
             bar.backButton.isHidden = (backAction == nil ? true : false)
             switch style {
             case .default:
-                let image = UIImage.gdImageNamed(named: "ic_back_black")
+                let image = UIImage(gd_named: "ic_back_black")
                 bar.backButton.setImage(image, for: .normal)
                 bar.titleLabel.textColor = UIColor(hex: "#333333")
                 bar.backgroundColor = UIColor.white
             case .lightContent:
-                let image = UIImage.gdImageNamed(named: "ic_back_white")
+                let image = UIImage(gd_named: "ic_back_white")
                 bar.backButton.setImage(image, for: .normal)
                 bar.titleLabel.textColor = UIColor.white
             }

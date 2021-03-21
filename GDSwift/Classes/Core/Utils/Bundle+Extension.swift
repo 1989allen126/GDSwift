@@ -6,11 +6,11 @@
 //  Copyright © 2021 CocoaPods. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-extension Bundle {
+public extension Bundle {
 
-    @objc public class var gdResourceBundle: Bundle {
+    @objc class var gdResourceBundle: Bundle {
         struct Static {
             static let _gdResourceBundle: Bundle = {
                 var sourceBundle = GD.hostingBundle
@@ -23,7 +23,7 @@ extension Bundle {
     }
 }
 
-extension UIImage {
+public extension UIImage {
     
     convenience init?(gd_named: String,path:String? = "image") {
         guard !gd_named.isEmpty else {

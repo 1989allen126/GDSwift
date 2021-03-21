@@ -6,9 +6,9 @@
 //  Copyright © 2021 CocoaPods. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-extension UIApplication {
+public extension UIApplication {
     
     var preferredApplicationWindow: UIWindow? {
         if let appWindow = UIApplication.shared.delegate?.window, let window = appWindow {

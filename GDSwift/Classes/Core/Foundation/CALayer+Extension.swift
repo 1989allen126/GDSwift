@@ -6,9 +6,9 @@
 //  Copyright © 2021 CocoaPods. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-extension CALayer {
+public extension CALayer {
     func addShadow(shadowColor: UIColor, shadowOpacity: CGFloat, shadowRadius: CGFloat, shadowOffset: CGSize) {
         self.shadowColor = shadowColor.cgColor
         self.shadowOffset = shadowOffset

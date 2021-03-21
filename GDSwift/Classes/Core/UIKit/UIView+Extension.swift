@@ -6,9 +6,9 @@
 //  Copyright © 2021 CocoaPods. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-extension UIView {
+public extension UIView {
     
     /// 快速添加子视图
     /// - Parameter subviews: 子视图
@@ -23,7 +23,7 @@ extension UIView {
     /// - Parameters:
     ///   - cornerRadii: 圆角幅度
     ///   - roundingCorners: UIRectCorner(rawValue: (UIRectCorner.topRight.rawValue) | (UIRectCorner.bottomRight.rawValue))
-    public func filletedCorner(_ cornerRadii: CGSize, _ roundingCorners: UIRectCorner) {
+    func filletedCorner(_ cornerRadii: CGSize, _ roundingCorners: UIRectCorner) {
         let fieldPath = UIBezierPath.init(roundedRect: bounds, byRoundingCorners: roundingCorners, cornerRadii: cornerRadii )
         let fieldLayer = CAShapeLayer()
         fieldLayer.frame = bounds

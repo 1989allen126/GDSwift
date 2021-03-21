@@ -18,7 +18,7 @@ GDSwift集成常用组件
     'OTHER_LDFLAGS' => '-ObjC'
   }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
   s.swift_version         = '5.1'
   #s.resource     = ['GDSwift/Resource/*']
   #s.resource = ['GDSwift/Resource/Assets']

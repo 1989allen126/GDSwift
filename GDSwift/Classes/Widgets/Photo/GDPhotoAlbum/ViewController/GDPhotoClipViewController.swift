@@ -10,9 +10,9 @@ import UIKit
 
 class GDPhotoClipViewController: GDPhotoBaseViewController, UIScrollViewDelegate {
     
-    var clipBounds: CGSize = CGSize(width: GDScreenWidth, height: GDScreenWidth) {
+    var clipBounds: CGSize = CGSize(width: ScreenWidth, height: ScreenWidth) {
         didSet {
-            self.photoImageScrollView.frame = CGRect(origin: CGPoint(x: (GDScreenWidth-clipBounds.width)/2, y: (GDScreenHeight-clipBounds.height)/2), size: clipBounds)
+            self.photoImageScrollView.frame = CGRect(origin: CGPoint(x: (ScreenWidth-clipBounds.width)/2, y: (ScreenHeight-clipBounds.height)/2), size: clipBounds)
         }
     }
     
@@ -29,7 +29,7 @@ class GDPhotoClipViewController: GDPhotoBaseViewController, UIScrollViewDelegate
     
     private lazy var photoImageScrollView: UIScrollView = {
         let scrollView = UIScrollView()
-        var frame = CGRect(origin: CGPoint(x: 0, y: (GDScreenHeight-GDScreenWidth)/2), size: self.clipBounds)
+        var frame = CGRect(origin: CGPoint(x: 0, y: (ScreenHeight-ScreenWidth)/2), size: self.clipBounds)
         scrollView.frame = frame
         scrollView.layer.borderColor = UIColor.white.cgColor
         scrollView.layer.borderWidth = 1
@@ -67,16 +67,16 @@ class GDPhotoClipViewController: GDPhotoBaseViewController, UIScrollViewDelegate
                 return
             }
             setContent = true
-            let imageHeight = GDScreenWidth*size.height/size.width
-            self.photoImageView.frame = CGRect(x: 0, y: 0, width: GDScreenWidth, height: imageHeight)
+            let imageHeight = ScreenWidth*size.height/size.width
+            self.photoImageView.frame = CGRect(x: 0, y: 0, width: ScreenWidth, height: imageHeight)
             self.photoImageScrollView.contentSize = self.photoImageView.frame.size
             if imageHeight > clipBounds.height {
                 self.photoImageScrollView.contentOffset.y = (imageHeight-clipBounds.height)/2
             } else {
                 self.photoImageView.center.y = clipBounds.height/2
             }
-            if GDScreenWidth > clipBounds.width {
-                self.photoImageScrollView.contentOffset.x = (GDScreenWidth-clipBounds.width)/2
+            if ScreenWidth > clipBounds.width {
+                self.photoImageScrollView.contentOffset.x = (ScreenWidth-clipBounds.width)/2
             } else {
                 self.photoImageView.center.x = clipBounds.width/2
             }
@@ -174,7 +174,7 @@ class GDPhotoClipViewController: GDPhotoBaseViewController, UIScrollViewDelegate
     }
     
     func scrollViewDidZoom(_ scrollView: UIScrollView) {
-        var xcenter = scrollView.center.x-(GDScreenWidth-clipBounds.width)/2 , ycenter = scrollView.center.y-(GDScreenHeight-clipBounds.height)/2
+        var xcenter = scrollView.center.x-(ScreenWidth-clipBounds.width)/2 , ycenter = scrollView.center.y-(ScreenHeight-clipBounds.height)/2
         //目前contentsize的width是否大于原scrollview的contentsize，如果大于，设置imageview中心x点为contentsize的一半，以固定imageview在该contentsize中心。如果不大于说明图像的宽还没有超出屏幕范围，可继续让中心x点为屏幕中点，此种情况确保图像在屏幕中心。
         xcenter = scrollView.contentSize.width > scrollView.frame.size.width ? scrollView.contentSize.width/2 : xcenter;
         ycenter = scrollView.contentSize.height > scrollView.frame.size.height ? scrollView.contentSize.height/2 : ycenter;
@@ -193,7 +193,7 @@ fileprivate class GDPhotoClipMaskView: UIView {
     }
     
     convenience override init(frame: CGRect) {
-        self.init(frame: frame, clipBounds: CGSize(width: GDScreenWidth, height: GDScreenWidth))
+        self.init(frame: frame, clipBounds: CGSize(width: ScreenWidth, height: ScreenWidth))
     }
     
     init(frame: CGRect, clipBounds: CGSize) {
@@ -201,7 +201,7 @@ fileprivate class GDPhotoClipMaskView: UIView {
         self.backgroundColor = UIColor.clear
         self.isUserInteractionEnabled = true
         let path = UIBezierPath(rect: self.bounds)
-        path.append(UIBezierPath(rect: CGRect(origin: CGPoint(x: (GDScreenWidth-clipBounds.width)/2, y: (GDScreenHeight-clipBounds.height)/2), size: clipBounds)).reversing())
+        path.append(UIBezierPath(rect: CGRect(origin: CGPoint(x: (ScreenWidth-clipBounds.width)/2, y: (ScreenHeight-clipBounds.height)/2), size: clipBounds)).reversing())
         let shapeLayer = CAShapeLayer()
         shapeLayer.fillColor = UIColor(white: 0, alpha: 0.7).cgColor
         shapeLayer.path = path.cgPath

@@ -60,7 +60,7 @@ public class GDCachingImageManager: PHCachingImageManager {
     }
     
     private func getThumbnailSize(originSize: CGSize) -> CGSize {
-        let thumbnailWidth: CGFloat = (GDScreenWidth - 5 * 5) / 4 * UIScreen.main.scale
+        let thumbnailWidth: CGFloat = (ScreenWidth - 5 * 5) / 4 * UIScreen.main.scale
         let pixelScale = CGFloat(originSize.width)/CGFloat(originSize.height)
         let thumbnailSize = CGSize(width: thumbnailWidth, height: thumbnailWidth/pixelScale)
         

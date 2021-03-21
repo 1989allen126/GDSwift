@@ -45,7 +45,7 @@ public class GDPhotoNavigationViewController: UINavigationController {
     }
     
     // 裁剪大小
-    public var clipBounds: CGSize = CGSize(width: GDScreenWidth, height: GDScreenWidth) {
+    public var clipBounds: CGSize = CGSize(width: ScreenWidth, height: ScreenWidth) {
         didSet {
             self.photoAlbumVC.clipBounds = clipBounds
         }

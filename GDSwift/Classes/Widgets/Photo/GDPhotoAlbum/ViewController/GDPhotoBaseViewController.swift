@@ -8,16 +8,13 @@
 
 import UIKit
 
-let GDScreenWidth: CGFloat = UIScreen.main.bounds.size.width
-let GDScreenHeight: CGFloat = UIScreen.main.bounds.size.height
-
 public class GDPhotoBaseViewController: UIViewController {
 
-    let naviView = UIView(frame: CGRect(x: 0, y: 0, width: GDScreenWidth, height: NaviBarHeight))
+    let naviView = UIView(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: NaviBarHeight))
     
     lazy var rightButton: UIButton = {
         let rightButton = UIButton()
-        rightButton.frame = CGRect(x: GDScreenWidth-50, y: NaviBarHeight - 44, width: 50, height: 44)
+        rightButton.frame = CGRect(x: ScreenWidth-50, y: NaviBarHeight - 44, width: 50, height: 44)
         rightButton.backgroundColor = UIColor.clear
         rightButton.titleLabel?.font = UIFont.systemFont(ofSize: 17)
         rightButton.addTarget(self, action: #selector(rightButtonClick(button:)), for: .touchUpInside)
@@ -25,7 +22,7 @@ public class GDPhotoBaseViewController: UIViewController {
     }()
     
     lazy var titleLabel: UILabel = {
-        let titleLabel = UILabel(frame: CGRect(x: GDScreenWidth/2-50, y: NaviBarHeight - 44, width: 100, height: 44))
+        let titleLabel = UILabel(frame: CGRect(x: ScreenWidth/2-50, y: NaviBarHeight - 44, width: 100, height: 44))
         titleLabel.textAlignment = .center
         titleLabel.textColor = UIColor.white
         titleLabel.font = UIFont.systemFont(ofSize: 17)

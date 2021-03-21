@@ -17,7 +17,7 @@ class GDPhotoAlbumListViewController: GDPhotoBaseViewController, UITableViewDele
     
     private var albumsList: [(assetCollection:PHAssetCollection, assetsFetchResult: PHFetchResult<PHAsset>)] = []
     private lazy var albumTableView: UITableView = {
-        let tableView = UITableView(frame: CGRect(x: 0, y: NaviBarHeight, width: GDScreenWidth, height: GDScreenHeight-NaviBarHeight), style: .plain)
+        let tableView = UITableView(frame: CGRect(x: 0, y: NaviBarHeight, width: ScreenWidth, height: ScreenHeight-NaviBarHeight), style: .plain)
         tableView.backgroundColor = UIColor.white
         tableView.showsVerticalScrollIndicator = false
         tableView.delegate = self

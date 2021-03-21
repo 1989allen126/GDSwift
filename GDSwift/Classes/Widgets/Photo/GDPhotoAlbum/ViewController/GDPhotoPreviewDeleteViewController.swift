@@ -35,10 +35,10 @@ public class GDPhotoPreviewDeleteViewController: GDPhotoBaseViewController, UICo
         flowLayout.sectionInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
         flowLayout.minimumInteritemSpacing = 0
         flowLayout.minimumLineSpacing = 0
-        flowLayout.itemSize = CGSize(width: GDScreenWidth+10, height: GDScreenHeight)
+        flowLayout.itemSize = CGSize(width: ScreenWidth+10, height: ScreenHeight)
         flowLayout.scrollDirection = .horizontal
         //  collectionView
-        let collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: GDScreenWidth+10, height: GDScreenHeight), collectionViewLayout: flowLayout)
+        let collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: ScreenWidth+10, height: ScreenHeight), collectionViewLayout: flowLayout)
         collectionView.backgroundColor = UIColor.clear
         collectionView.isPagingEnabled = true
         //  添加协议方法

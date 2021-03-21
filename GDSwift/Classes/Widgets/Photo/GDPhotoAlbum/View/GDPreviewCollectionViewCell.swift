@@ -56,8 +56,8 @@ class GDPreviewCollectionViewCell: UICollectionViewCell, UIScrollViewDelegate {
             guard let size = self.photoImage?.size else {
                 return
             }
-            let imageHeight = GDScreenWidth*size.height/size.width
-            let frame = CGRect(x: 0, y: 0, width: GDScreenWidth, height: imageHeight)
+            let imageHeight = ScreenWidth*size.height/size.width
+            let frame = CGRect(x: 0, y: 0, width: ScreenWidth, height: imageHeight)
             self.photoImageView.frame = frame
             self.photoImageView.center = self.photoImageScrollView.center
             self.photoImageScrollView.contentSize = self.photoImageView.frame.size

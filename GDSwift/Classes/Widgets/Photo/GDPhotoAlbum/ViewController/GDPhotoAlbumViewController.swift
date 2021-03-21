@@ -17,21 +17,21 @@ class GDPhotoAlbumViewController: GDPhotoBaseViewController, PHPhotoLibraryChang
     var type: GDPhotoAlbumType = .selectPhoto
     
     // 剪裁大小
-    var clipBounds: CGSize = CGSize(width: GDScreenWidth, height: GDScreenWidth)
+    var clipBounds: CGSize = CGSize(width: ScreenWidth, height: ScreenWidth)
     weak var photoAlbumDelegate: GDPhotoAlbumProtocol?
     
     private let cellIdentifier = "PhotoCollectionCell"
     private lazy var photoCollectionView: UICollectionView = {
         // 竖屏时每行显示4张图片
         let shape: CGFloat = 5
-        let cellWidth: CGFloat = (GDScreenWidth - 5 * shape) / 4
+        let cellWidth: CGFloat = (ScreenWidth - 5 * shape) / 4
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.sectionInset = UIEdgeInsets(top: 6, left: shape, bottom: self.type == .selectPhoto ? 44:0, right: shape)
         flowLayout.itemSize = CGSize(width: cellWidth, height: cellWidth)
         flowLayout.minimumLineSpacing = shape
         flowLayout.minimumInteritemSpacing = shape
         //  collectionView
-        let collectionView = UICollectionView(frame: CGRect(x: 0, y: NaviBarHeight, width: GDScreenWidth, height: GDScreenHeight - NaviBarHeight), collectionViewLayout: flowLayout)
+        let collectionView = UICollectionView(frame: CGRect(x: 0, y: NaviBarHeight, width: ScreenWidth, height: ScreenHeight - NaviBarHeight), collectionViewLayout: flowLayout)
         collectionView.backgroundColor = UIColor.white
         collectionView.scrollIndicatorInsets = UIEdgeInsets(top: 0, left: 0, bottom: 44, right: 0)
         //  添加协议方法
@@ -45,7 +45,7 @@ class GDPhotoAlbumViewController: GDPhotoBaseViewController, PHPhotoLibraryChang
     
     private var bottomView = GDAlbumBottomView()
     private lazy var loadingView: UIView = {
-        let view = UIView(frame: CGRect(x: 0, y: NaviBarHeight, width: GDScreenWidth, height: GDScreenHeight-NaviBarHeight))
+        let view = UIView(frame: CGRect(x: 0, y: NaviBarHeight, width: ScreenWidth, height: ScreenHeight-NaviBarHeight))
         view.backgroundColor = UIColor.clear
         let loadingBackView = UIView(frame: CGRect(x: view.frame.width/2-30, y: view.frame.height/2-32-30, width: 60, height: 60))
         loadingBackView.backgroundColor = UIColor(white: 0, alpha: 0.8)
@@ -332,7 +332,7 @@ class GDAlbumBottomView: UIView {
     }()
     
     private lazy var sureButton: UIButton = {
-        let button = UIButton(frame: CGRect(x: GDScreenWidth-12-64, y: 6, width: 64, height: 32))
+        let button = UIButton(frame: CGRect(x: ScreenWidth-12-64, y: 6, width: 64, height: 32))
         button.layer.cornerRadius = 4
         button.clipsToBounds = true
         button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
@@ -376,11 +376,11 @@ class GDAlbumBottomView: UIView {
     }
     
     convenience init() {
-        self.init(frame: CGRect(x: 0, y: GDScreenHeight-44, width: GDScreenWidth, height: 44), type: .normal)
+        self.init(frame: CGRect(x: 0, y: ScreenHeight-44, width: ScreenWidth, height: 44), type: .normal)
     }
     
     convenience init(type: GDAlbumBottomViewType) {
-        self.init(frame: CGRect(x: 0, y: GDScreenHeight-44, width: GDScreenWidth, height: 44), type: type)
+        self.init(frame: CGRect(x: 0, y: ScreenHeight-44, width: ScreenWidth, height: 44), type: type)
     }
     
     convenience override init(frame: CGRect) {

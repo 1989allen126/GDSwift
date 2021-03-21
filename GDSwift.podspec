@@ -39,6 +39,7 @@ GDSwift集成常用组件
     ss.frameworks = 'UIKit', 'Foundation', 'CoreServices', 'AVFoundation'
     ss.dependency "SnapKit"
     ss.dependency "Hero"
+    ss.dependency "GDSwift/Core"
   end
 
 end

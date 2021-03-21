@@ -10,7 +10,7 @@ import UIKit
 import GDSwift
 
 class ViewController: BaseViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
@@ -20,9 +20,8 @@ class ViewController: BaseViewController {
 // MARK:- 初始化UI
 extension ViewController {
     fileprivate func initUI() {
-        GDEnvConfig.defaultConfig.languageCode = "zh-Hans"
-        let str = Bundle.gd_localized("App.displayName")
-        LXFLog("=========\(String(describing: str))", type: .debug)
+        self.view.backgroundColor = UIColor.gray
+        
     }
 }
 

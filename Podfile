@@ -1,21 +1,26 @@
 use_frameworks!
 
 
+def gd_common_pods
+  pod 'SnapKit'
+  #pod 'FMDB'
+  #pod 'Kingfisher'
+end
 
 target 'GDSwift' do
     
   # GDSwift
-  pod 'SnapKit'
+  gd_common_pods
   
   target 'GDSwift_Tests' do
     inherit! :search_paths
-    pod 'SnapKit'
+    gd_common_pods
   end
 end
 
 target 'GDSwift_Example' do
   
-  pod 'SnapKit'
+  gd_common_pods
   # GDSwift
   #pod 'GDSwift', :path => './'
 end

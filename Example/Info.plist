@@ -41,5 +41,9 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>访问相册</string>
+	<key>NSCameraUsageDescription</key>
+	<string>访问相机，获取拍照的权限</string>
 </dict>
 </plist>

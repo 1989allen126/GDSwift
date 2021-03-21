@@ -8,6 +8,14 @@
 
 import UIKit
 
+public  func  GDLocalizedString(key:String) -> String {
+    guard let value = Bundle.gd_localized(key) else {
+        return ""
+    }
+    
+    return value
+}
+
 extension Bundle {
     
     public class var hostingBundle: Bundle {

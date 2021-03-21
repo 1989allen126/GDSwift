@@ -10,13 +10,40 @@
 		185D05C42606151000DA0BEF /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 185D05C22606151000DA0BEF /* zh-Hans.lproj */; };
 		185D05C52606151000DA0BEF /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 185D05C32606151000DA0BEF /* en.lproj */; };
 		185D05C9260615D200DA0BEF /* GDEnvConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D05C8260615D200DA0BEF /* GDEnvConfig.swift */; };
-		185D05D42606183D00DA0BEF /* GD.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D05D32606183D00DA0BEF /* GD.generated.swift */; };
+		185D05F22606219B00DA0BEF /* image in Resources */ = {isa = PBXBuildFile; fileRef = 185D05F12606219B00DA0BEF /* image */; };
+		185D05FD2606285500DA0BEF /* GDBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D05FC2606285500DA0BEF /* GDBaseViewController.swift */; };
+		185D06032606286F00DA0BEF /* GDBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D06022606286F00DA0BEF /* GDBaseNavigationController.swift */; };
+		185D062626062D5800DA0BEF /* GDPhotoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D060B26062D5800DA0BEF /* GDPhotoData.swift */; };
+		185D062726062D5800DA0BEF /* GDProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D060D26062D5800DA0BEF /* GDProgressView.swift */; };
+		185D062826062D5800DA0BEF /* GDPreviewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D060E26062D5800DA0BEF /* GDPreviewCollectionViewCell.swift */; };
+		185D062926062D5800DA0BEF /* GDPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D060F26062D5800DA0BEF /* GDPhotoCollectionViewCell.swift */; };
+		185D063226062D5800DA0BEF /* GDPhotoAlbumListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D061A26062D5800DA0BEF /* GDPhotoAlbumListViewController.swift */; };
+		185D063326062D5800DA0BEF /* GDPhotoAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D061B26062D5800DA0BEF /* GDPhotoAlbumViewController.swift */; };
+		185D063426062D5800DA0BEF /* GDPhotoClipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D061C26062D5800DA0BEF /* GDPhotoClipViewController.swift */; };
+		185D063526062D5800DA0BEF /* GDPhotoPreviewDeleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D061D26062D5800DA0BEF /* GDPhotoPreviewDeleteViewController.swift */; };
+		185D063626062D5800DA0BEF /* GDPhotoNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D061E26062D5800DA0BEF /* GDPhotoNavigationViewController.swift */; };
+		185D063726062D5800DA0BEF /* GDPhotoBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D061F26062D5800DA0BEF /* GDPhotoBaseViewController.swift */; };
+		185D063826062D5800DA0BEF /* GDPhotoPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D062026062D5800DA0BEF /* GDPhotoPreviewViewController.swift */; };
+		185D063926062D5800DA0BEF /* GDCachingImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D062126062D5800DA0BEF /* GDCachingImageManager.swift */; };
+		188862642606321800863269 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188862632606321800863269 /* UIImage+Extension.swift */; };
+		18886268260632AA00863269 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18886267260632AA00863269 /* UIImageView+Extension.swift */; };
+		188862702606336600863269 /* GDCommonTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1888626F2606336600863269 /* GDCommonTools.swift */; };
+		188862752606362000863269 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDC9A82602309C00840378 /* Logger.swift */; };
+		1888627B260642C000863269 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1888627A260642C000863269 /* UIColor+Extension.swift */; };
+		188862812606447600863269 /* CALayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188862802606447600863269 /* CALayer+Extension.swift */; };
+		188862852606454D00863269 /* GDFakeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188862842606454D00863269 /* GDFakeNavigationBar.swift */; };
+		188862892606469800863269 /* GDCapturePhotoBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188862882606469800863269 /* GDCapturePhotoBaseViewController.swift */; };
+		1888629A2606BD6A00863269 /* PhotoDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188862922606BD3A00863269 /* PhotoDemoViewController.swift */; };
+		1888629E2606C65800863269 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1888629D2606C65800863269 /* UIButton+Extension.swift */; };
+		188862A22606C74800863269 /* GDBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188862A12606C74800863269 /* GDBaseView.swift */; };
+		188862A62606CBFC00863269 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188862A52606CBFC00863269 /* UIViewController+Extension.swift */; };
+		18A516212602EAF900425CC6 /* GD.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A516202602EAF800425CC6 /* GD.generated.swift */; };
+		18A516252602EE3000425CC6 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A516242602EE3000425CC6 /* Bundle+Extension.swift */; };
 		18FDC97E26022F4500840378 /* GDSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 18FDC97C26022F4400840378 /* GDSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		18FDC9AD2602309C00840378 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FDC9A12602309C00840378 /* LaunchScreen.xib */; };
 		18FDC9AE2602309C00840378 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FDC9A32602309C00840378 /* Main.storyboard */; };
 		18FDC9AF2602309C00840378 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18FDC9A52602309C00840378 /* Images.xcassets */; };
 		18FDC9B02602309C00840378 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDC9A62602309C00840378 /* AppDelegate.swift */; };
-		18FDC9B12602309C00840378 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDC9A82602309C00840378 /* Logger.swift */; };
 		18FDC9B22602309C00840378 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDC9AA2602309C00840378 /* ViewController.swift */; };
 		18FDC9B32602309C00840378 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDC9AB2602309C00840378 /* BaseViewController.swift */; };
 		18FDCA432602410300840378 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDCA422602410300840378 /* UIView+Extension.swift */; };
@@ -82,7 +109,35 @@
 		185D05C22606151000DA0BEF /* zh-Hans.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "zh-Hans.lproj"; sourceTree = "<group>"; };
 		185D05C32606151000DA0BEF /* en.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = en.lproj; sourceTree = "<group>"; };
 		185D05C8260615D200DA0BEF /* GDEnvConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDEnvConfig.swift; sourceTree = "<group>"; };
-		185D05D32606183D00DA0BEF /* GD.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GD.generated.swift; sourceTree = "<group>"; };
+		185D05F12606219B00DA0BEF /* image */ = {isa = PBXFileReference; lastKnownFileType = folder; path = image; sourceTree = "<group>"; };
+		185D05F52606243A00DA0BEF /* GDSwift.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = GDSwift.podspec; sourceTree = "<group>"; };
+		185D05FC2606285500DA0BEF /* GDBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDBaseViewController.swift; sourceTree = "<group>"; };
+		185D06022606286F00DA0BEF /* GDBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDBaseNavigationController.swift; sourceTree = "<group>"; };
+		185D060B26062D5800DA0BEF /* GDPhotoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDPhotoData.swift; sourceTree = "<group>"; };
+		185D060D26062D5800DA0BEF /* GDProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDProgressView.swift; sourceTree = "<group>"; };
+		185D060E26062D5800DA0BEF /* GDPreviewCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDPreviewCollectionViewCell.swift; sourceTree = "<group>"; };
+		185D060F26062D5800DA0BEF /* GDPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		185D061A26062D5800DA0BEF /* GDPhotoAlbumListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDPhotoAlbumListViewController.swift; sourceTree = "<group>"; };
+		185D061B26062D5800DA0BEF /* GDPhotoAlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDPhotoAlbumViewController.swift; sourceTree = "<group>"; };
+		185D061C26062D5800DA0BEF /* GDPhotoClipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDPhotoClipViewController.swift; sourceTree = "<group>"; };
+		185D061D26062D5800DA0BEF /* GDPhotoPreviewDeleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDPhotoPreviewDeleteViewController.swift; sourceTree = "<group>"; };
+		185D061E26062D5800DA0BEF /* GDPhotoNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDPhotoNavigationViewController.swift; sourceTree = "<group>"; };
+		185D061F26062D5800DA0BEF /* GDPhotoBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDPhotoBaseViewController.swift; sourceTree = "<group>"; };
+		185D062026062D5800DA0BEF /* GDPhotoPreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDPhotoPreviewViewController.swift; sourceTree = "<group>"; };
+		185D062126062D5800DA0BEF /* GDCachingImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDCachingImageManager.swift; sourceTree = "<group>"; };
+		188862632606321800863269 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		18886267260632AA00863269 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		1888626F2606336600863269 /* GDCommonTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDCommonTools.swift; sourceTree = "<group>"; };
+		1888627A260642C000863269 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		188862802606447600863269 /* CALayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extension.swift"; sourceTree = "<group>"; };
+		188862842606454D00863269 /* GDFakeNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDFakeNavigationBar.swift; sourceTree = "<group>"; };
+		188862882606469800863269 /* GDCapturePhotoBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDCapturePhotoBaseViewController.swift; sourceTree = "<group>"; };
+		188862922606BD3A00863269 /* PhotoDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDemoViewController.swift; sourceTree = "<group>"; };
+		1888629D2606C65800863269 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		188862A12606C74800863269 /* GDBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDBaseView.swift; sourceTree = "<group>"; };
+		188862A52606CBFC00863269 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		18A516202602EAF800425CC6 /* GD.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GD.generated.swift; sourceTree = "<group>"; };
+		18A516242602EE3000425CC6 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		18FDC97C26022F4400840378 /* GDSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSwift.h; sourceTree = "<group>"; };
 		18FDC97D26022F4400840378 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18FDC9A22602309C00840378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -149,6 +204,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185D05FB2606282F00DA0BEF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				185D05FC2606285500DA0BEF /* GDBaseViewController.swift */,
+				185D06022606286F00DA0BEF /* GDBaseNavigationController.swift */,
+				188862842606454D00863269 /* GDFakeNavigationBar.swift */,
+				188862A12606C74800863269 /* GDBaseView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		185D060626062D5800DA0BEF /* GDPhotoAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				185D060A26062D5800DA0BEF /* Model */,
+				185D060C26062D5800DA0BEF /* View */,
+				185D061926062D5800DA0BEF /* ViewController */,
+			);
+			path = GDPhotoAlbum;
+			sourceTree = "<group>";
+		};
+		185D060A26062D5800DA0BEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				185D060B26062D5800DA0BEF /* GDPhotoData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		185D060C26062D5800DA0BEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				185D060D26062D5800DA0BEF /* GDProgressView.swift */,
+				185D060E26062D5800DA0BEF /* GDPreviewCollectionViewCell.swift */,
+				185D060F26062D5800DA0BEF /* GDPhotoCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		185D061926062D5800DA0BEF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				185D061A26062D5800DA0BEF /* GDPhotoAlbumListViewController.swift */,
+				185D061B26062D5800DA0BEF /* GDPhotoAlbumViewController.swift */,
+				185D061C26062D5800DA0BEF /* GDPhotoClipViewController.swift */,
+				185D061D26062D5800DA0BEF /* GDPhotoPreviewDeleteViewController.swift */,
+				185D061E26062D5800DA0BEF /* GDPhotoNavigationViewController.swift */,
+				185D061F26062D5800DA0BEF /* GDPhotoBaseViewController.swift */,
+				185D062026062D5800DA0BEF /* GDPhotoPreviewViewController.swift */,
+				188862882606469800863269 /* GDCapturePhotoBaseViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		188862912606BD1300863269 /* PhotoDemo */ = {
+			isa = PBXGroup;
+			children = (
+				188862922606BD3A00863269 /* PhotoDemoViewController.swift */,
+			);
+			path = PhotoDemo;
+			sourceTree = "<group>";
+		};
+		18A5162C2602F6DF00425CC6 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		18FDC97726022F4400840378 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,10 +286,11 @@
 		18FDC97826022F4400840378 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				18A5162C2602F6DF00425CC6 /* Protocol */,
 				18FDCA6C2602420300840378 /* Helper */,
 				18FDCA6B260241EE00840378 /* Constant */,
 				18FDCA6A260241DE00840378 /* Theme */,
-				18FDCA69260241D700840378 /* Tools */,
+				18FDCA69260241D700840378 /* Utils */,
 				18FDCA41260240D500840378 /* UIKit */,
 				18FDCA40260240CE00840378 /* Foundation */,
 			);
@@ -175,6 +300,7 @@
 		18FDC97926022F4400840378 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				185D05FB2606282F00DA0BEF /* Base */,
 				18FDCA722602423700840378 /* CycleView */,
 				18FDCA712602422300840378 /* Marquee */,
 				18FDCA702602421B00840378 /* Photo */,
@@ -188,6 +314,7 @@
 		18FDC97A26022F4400840378 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				185D05F12606219B00DA0BEF /* image */,
 				185D05C32606151000DA0BEF /* en.lproj */,
 				185D05C22606151000DA0BEF /* zh-Hans.lproj */,
 			);
@@ -209,7 +336,6 @@
 			isa = PBXGroup;
 			children = (
 				18FDC9A02602309C00840378 /* Other */,
-				18FDC9A72602309C00840378 /* Utils */,
 				18FDC9A92602309C00840378 /* Controllers */,
 				18FDC9AC2602309C00840378 /* Info.plist */,
 			);
@@ -228,17 +354,10 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
-		18FDC9A72602309C00840378 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				18FDC9A82602309C00840378 /* Logger.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		18FDC9A92602309C00840378 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				188862912606BD1300863269 /* PhotoDemo */,
 				18FDC9AA2602309C00840378 /* ViewController.swift */,
 				18FDC9AB2602309C00840378 /* BaseViewController.swift */,
 			);
@@ -249,6 +368,7 @@
 			isa = PBXGroup;
 			children = (
 				18FDCA65260241CD00840378 /* String+Extension.swift */,
+				188862802606447600863269 /* CALayer+Extension.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -259,18 +379,27 @@
 				18FDCA422602410300840378 /* UIView+Extension.swift */,
 				18FDCA492602411200840378 /* UILabel+Extension.swift */,
 				18FDCA4D2602412300840378 /* UITextfield+Extension.swift */,
+				188862632606321800863269 /* UIImage+Extension.swift */,
+				18886267260632AA00863269 /* UIImageView+Extension.swift */,
+				1888627A260642C000863269 /* UIColor+Extension.swift */,
+				1888629D2606C65800863269 /* UIButton+Extension.swift */,
+				188862A52606CBFC00863269 /* UIViewController+Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
 		};
-		18FDCA69260241D700840378 /* Tools */ = {
+		18FDCA69260241D700840378 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				18FDC9A82602309C00840378 /* Logger.swift */,
+				185D062126062D5800DA0BEF /* GDCachingImageManager.swift */,
 				18FDCA61260241A200840378 /* GDSecurityTools.swift */,
 				18FDCA552602415C00840378 /* GDLanguageLocalize.swift */,
-				185D05D32606183D00DA0BEF /* GD.generated.swift */,
+				18A516202602EAF800425CC6 /* GD.generated.swift */,
+				18A516242602EE3000425CC6 /* Bundle+Extension.swift */,
+				1888626F2606336600863269 /* GDCommonTools.swift */,
 			);
-			path = Tools;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		18FDCA6A260241DE00840378 /* Theme */ = {
@@ -322,6 +451,7 @@
 		18FDCA702602421B00840378 /* Photo */ = {
 			isa = PBXGroup;
 			children = (
+				185D060626062D5800DA0BEF /* GDPhotoAlbum */,
 			);
 			path = Photo;
 			sourceTree = "<group>";
@@ -366,6 +496,7 @@
 			isa = PBXGroup;
 			children = (
 				18FDCA832602436000840378 /* README.md */,
+				185D05F52606243A00DA0BEF /* GDSwift.podspec */,
 				FD846F552233AED40038A715 /* Sources */,
 				18FDC99F2602309C00840378 /* Example for GDSwift */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
@@ -564,6 +695,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185D05F22606219B00DA0BEF /* image in Resources */,
 				185D05C52606151000DA0BEF /* en.lproj in Resources */,
 				185D05C42606151000DA0BEF /* zh-Hans.lproj in Resources */,
 			);
@@ -691,8 +823,8 @@
 			files = (
 				18FDC9B22602309C00840378 /* ViewController.swift in Sources */,
 				18FDC9B32602309C00840378 /* BaseViewController.swift in Sources */,
+				1888629A2606BD6A00863269 /* PhotoDemoViewController.swift in Sources */,
 				18FDC9B02602309C00840378 /* AppDelegate.swift in Sources */,
-				18FDC9B12602309C00840378 /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,17 +832,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188862752606362000863269 /* Logger.swift in Sources */,
+				18886268260632AA00863269 /* UIImageView+Extension.swift in Sources */,
 				18FDCA66260241CD00840378 /* String+Extension.swift in Sources */,
+				185D063826062D5800DA0BEF /* GDPhotoPreviewViewController.swift in Sources */,
 				18FDCA4E2602412300840378 /* UITextfield+Extension.swift in Sources */,
-				185D05D42606183D00DA0BEF /* GD.generated.swift in Sources */,
+				185D063526062D5800DA0BEF /* GDPhotoPreviewDeleteViewController.swift in Sources */,
+				185D05FD2606285500DA0BEF /* GDBaseViewController.swift in Sources */,
 				18FDCA5A2602416F00840378 /* GDConstantAndMacro.swift in Sources */,
+				185D062726062D5800DA0BEF /* GDProgressView.swift in Sources */,
+				185D063926062D5800DA0BEF /* GDCachingImageManager.swift in Sources */,
+				185D063326062D5800DA0BEF /* GDPhotoAlbumViewController.swift in Sources */,
+				18A516252602EE3000425CC6 /* Bundle+Extension.swift in Sources */,
 				18FDCA4A2602411200840378 /* UILabel+Extension.swift in Sources */,
+				1888629E2606C65800863269 /* UIButton+Extension.swift in Sources */,
+				185D063226062D5800DA0BEF /* GDPhotoAlbumListViewController.swift in Sources */,
 				18FDCA62260241A200840378 /* GDSecurityTools.swift in Sources */,
+				188862A22606C74800863269 /* GDBaseView.swift in Sources */,
+				185D063426062D5800DA0BEF /* GDPhotoClipViewController.swift in Sources */,
+				188862892606469800863269 /* GDCapturePhotoBaseViewController.swift in Sources */,
+				185D062826062D5800DA0BEF /* GDPreviewCollectionViewCell.swift in Sources */,
+				188862702606336600863269 /* GDCommonTools.swift in Sources */,
 				18FDCA522602413600840378 /* GDTheme.swift in Sources */,
+				188862A62606CBFC00863269 /* UIViewController+Extension.swift in Sources */,
 				185D05C9260615D200DA0BEF /* GDEnvConfig.swift in Sources */,
+				185D06032606286F00DA0BEF /* GDBaseNavigationController.swift in Sources */,
+				185D063726062D5800DA0BEF /* GDPhotoBaseViewController.swift in Sources */,
+				1888627B260642C000863269 /* UIColor+Extension.swift in Sources */,
+				188862852606454D00863269 /* GDFakeNavigationBar.swift in Sources */,
 				18FDCA742602426200840378 /* GDPopView.swift in Sources */,
+				188862642606321800863269 /* UIImage+Extension.swift in Sources */,
+				185D062926062D5800DA0BEF /* GDPhotoCollectionViewCell.swift in Sources */,
 				18FDCA562602415C00840378 /* GDLanguageLocalize.swift in Sources */,
+				188862812606447600863269 /* CALayer+Extension.swift in Sources */,
+				185D063626062D5800DA0BEF /* GDPhotoNavigationViewController.swift in Sources */,
+				185D062626062D5800DA0BEF /* GDPhotoData.swift in Sources */,
 				18FDCA432602410300840378 /* UIView+Extension.swift in Sources */,
+				18A516212602EAF900425CC6 /* GD.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

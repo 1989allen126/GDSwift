@@ -1,12 +1,27 @@
 /* 
   Localizable.strings
-  VodofoGPS
+  GDGPS
 
   Created by apple on 2019/6/2.
   Copyright © 2019 apple. All rights reserved.
 */
 
 
-"App.displayName" = "365汽车在线V3";
+//照片
+"GD.Photo.title" = "照片";
+"GD.Photo.text.finished" = "完成(\%@)";
+"GD.Photo.text.preview" = "预览";
+"GD.Photo.text.all" = "所有图片";
+"GD.Photo.prompt.select" = "您最多只能选择%@张";
+"GD.Photo.pop.delete.title" = "确定要删除此照片吗？";
+"GD.Photo.pop.openAlbum.title" = "请打开相册访问权限";
+"GD.Camera.Auth.tip" = "提示";
+"GD.Camera.Auth.tip.content" = "暂无访问相机权限,请前往设置更改访问权限";
 
-
+//公共
+"GD.Global.common.cancel" = "取消";
+"GD.Global.common.done" = "完成";
+"GD.Global.common.know" = "我知道了";
+"GD.Global.common.delete" = "删除";
+"GD.Global.common.setting" = "设置";
+"GD.Global.common.gotoSetting" = "前往";

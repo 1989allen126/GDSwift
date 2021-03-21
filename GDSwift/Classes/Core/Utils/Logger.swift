@@ -10,7 +10,7 @@ import Foundation
 
 let log = Logger.shared
 
-final class Logger {
+public final class Logger {
     static let shared = Logger()
     private init() { }
     
@@ -22,40 +22,40 @@ final class Logger {
 }
 
 extension Logger {
-    func error<T>(
+    public class func error<T>(
         _ message : T,
         file : StaticString = #file,
         function : StaticString = #function,
         line : UInt = #line
     ) {
-        LXFLog(message, type: .error, file : file, function: function, line: line)
+        GDLog(message, type: .error, file : file, function: function, line: line)
     }
     
-    func warning<T>(
+    public class func warning<T>(
         _ message : T,
         file : StaticString = #file,
         function : StaticString = #function,
         line : UInt = #line
     ) {
-        LXFLog(message, type: .warning, file : file, function: function, line: line)
+        GDLog(message, type: .warning, file : file, function: function, line: line)
     }
     
-    func info<T>(
+    public class func info<T>(
         _ message : T,
         file : StaticString = #file,
         function : StaticString = #function,
         line : UInt = #line
     ) {
-        LXFLog(message, type: .info, file : file, function: function, line: line)
+        GDLog(message, type: .info, file : file, function: function, line: line)
     }
     
-    func debug<T>(
+    public class func debug<T>(
         _ message : T,
         file : StaticString = #file,
         function : StaticString = #function,
         line : UInt = #line
     ) {
-        LXFLog(message, type: .debug, file : file, function: function, line: line)
+        GDLog(message, type: .debug, file : file, function: function, line: line)
     }
 }
 
@@ -70,7 +70,7 @@ enum LogType: String {
 // MARK:- 自定义打印方法
 // target -> Build Settings 搜索 Other Swift Flags
 // 设置Debug 添加 -D DEBUG
-func LXFLog<T>(
+fileprivate func GDLog<T>(
     _ message : T,
     type: LogType,
     file : StaticString = #file,

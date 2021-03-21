@@ -1,12 +1,28 @@
 /*
   Localizable.strings
-  VodofoGPS
+  GDGPS
 
   Created by apple on 2019/6/2.
   Copyright © 2019 apple. All rights reserved.
 */
 
-"App.displayName" = "Track Sense";
+//照片
+"GD.Photo.title" = "Photo";
+"GD.Photo.text.finished" = "Finished(\%@)";
+"GD.Photo.text.preview" = "Preview";
+"GD.Photo.text.all" = "All Photos";
+"GD.Photo.prompt.select" = "The max limit %@";
+"GD.Photo.pop.delete.title" = "Are you sure to delete the photos?";
+"GD.Photo.pop.openAlbum.title" = "Please open album access";
+"GD.Camera.Auth.tip" = "Tip";
+"GD.Camera.Auth.tip.content" = "No access to the camera. Please  change the access";
 
+//公共
+"GD.Global.common.cancel" = "Cancel";
+"GD.Global.common.done" = "Done";
+"GD.Global.common.know" = "I know";
+"GD.Global.common.delete" = "Delete";
+"GD.Global.common.setting" = "Setting";
+"GD.Global.common.gotoSetting" = "GoTo";
 
 

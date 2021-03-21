@@ -25,6 +25,19 @@
 		185D063726062D5800DA0BEF /* GDPhotoBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D061F26062D5800DA0BEF /* GDPhotoBaseViewController.swift */; };
 		185D063826062D5800DA0BEF /* GDPhotoPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D062026062D5800DA0BEF /* GDPhotoPreviewViewController.swift */; };
 		185D063926062D5800DA0BEF /* GDCachingImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D062126062D5800DA0BEF /* GDCachingImageManager.swift */; };
+		18736D0E2606E8F800206170 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18736D0D2606E8F800206170 /* UIApplication+Extension.swift */; };
+		18736D122606E95500206170 /* GDCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18736D112606E95500206170 /* GDCache.swift */; };
+		18736D162606E9A700206170 /* GDCacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18736D152606E9A700206170 /* GDCacheable.swift */; };
+		18736D1A2606EDCF00206170 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18736D192606EDCF00206170 /* Then.swift */; };
+		18736D1E2606F2CD00206170 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18736D1D2606F2CD00206170 /* Protected.swift */; };
+		18736D2226071A4A00206170 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18736D2126071A4A00206170 /* Array+Extension.swift */; };
+		18736D2626071A5900206170 /* CharacterSet+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18736D2526071A5900206170 /* CharacterSet+Extension.swift */; };
+		18736D5926074A8700206170 /* GDParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18736D4526071F6500206170 /* GDParameterEncoding.swift */; };
+		18736D5F26074BF900206170 /* NSNumber+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18736D5E26074BF900206170 /* NSNumber+Extension.swift */; };
+		18736D732607539200206170 /* UIEdgeInsets+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18736D722607539200206170 /* UIEdgeInsets+Extension.swift */; };
+		18736DC22607593300206170 /* GDNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18736DC12607593300206170 /* GDNavigator.swift */; };
+		18736DD026075A4100206170 /* GDWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18736DCF26075A4100206170 /* GDWebViewController.swift */; };
+		18736DDB26075BD600206170 /* Foundation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18736DDA26075BD600206170 /* Foundation+Extension.swift */; };
 		188862642606321800863269 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188862632606321800863269 /* UIImage+Extension.swift */; };
 		18886268260632AA00863269 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18886267260632AA00863269 /* UIImageView+Extension.swift */; };
 		188862702606336600863269 /* GDCommonTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1888626F2606336600863269 /* GDCommonTools.swift */; };
@@ -125,6 +138,19 @@
 		185D061F26062D5800DA0BEF /* GDPhotoBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDPhotoBaseViewController.swift; sourceTree = "<group>"; };
 		185D062026062D5800DA0BEF /* GDPhotoPreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDPhotoPreviewViewController.swift; sourceTree = "<group>"; };
 		185D062126062D5800DA0BEF /* GDCachingImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDCachingImageManager.swift; sourceTree = "<group>"; };
+		18736D0D2606E8F800206170 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		18736D112606E95500206170 /* GDCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDCache.swift; sourceTree = "<group>"; };
+		18736D152606E9A700206170 /* GDCacheable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDCacheable.swift; sourceTree = "<group>"; };
+		18736D192606EDCF00206170 /* Then.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
+		18736D1D2606F2CD00206170 /* Protected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protected.swift; sourceTree = "<group>"; };
+		18736D2126071A4A00206170 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		18736D2526071A5900206170 /* CharacterSet+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterSet+Extension.swift"; sourceTree = "<group>"; };
+		18736D4526071F6500206170 /* GDParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDParameterEncoding.swift; sourceTree = "<group>"; };
+		18736D5E26074BF900206170 /* NSNumber+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNumber+Extension.swift"; sourceTree = "<group>"; };
+		18736D722607539200206170 /* UIEdgeInsets+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Extension.swift"; sourceTree = "<group>"; };
+		18736DC12607593300206170 /* GDNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDNavigator.swift; sourceTree = "<group>"; };
+		18736DCF26075A4100206170 /* GDWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDWebViewController.swift; sourceTree = "<group>"; };
+		18736DDA26075BD600206170 /* Foundation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation+Extension.swift"; sourceTree = "<group>"; };
 		188862632606321800863269 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		18886267260632AA00863269 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		1888626F2606336600863269 /* GDCommonTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDCommonTools.swift; sourceTree = "<group>"; };
@@ -207,10 +233,12 @@
 		185D05FB2606282F00DA0BEF /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				18736DC12607593300206170 /* GDNavigator.swift */,
 				185D05FC2606285500DA0BEF /* GDBaseViewController.swift */,
 				185D06022606286F00DA0BEF /* GDBaseNavigationController.swift */,
 				188862842606454D00863269 /* GDFakeNavigationBar.swift */,
 				188862A12606C74800863269 /* GDBaseView.swift */,
+				18736DCF26075A4100206170 /* GDWebViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -258,6 +286,13 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		18736D2926071B7200206170 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
 		188862912606BD1300863269 /* PhotoDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +304,7 @@
 		18A5162C2602F6DF00425CC6 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				18736D152606E9A700206170 /* GDCacheable.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -357,6 +393,7 @@
 		18FDC9A92602309C00840378 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				18736D2926071B7200206170 /* Encoding */,
 				188862912606BD1300863269 /* PhotoDemo */,
 				18FDC9AA2602309C00840378 /* ViewController.swift */,
 				18FDC9AB2602309C00840378 /* BaseViewController.swift */,
@@ -369,6 +406,11 @@
 			children = (
 				18FDCA65260241CD00840378 /* String+Extension.swift */,
 				188862802606447600863269 /* CALayer+Extension.swift */,
+				18736D0D2606E8F800206170 /* UIApplication+Extension.swift */,
+				18736D2126071A4A00206170 /* Array+Extension.swift */,
+				18736D2526071A5900206170 /* CharacterSet+Extension.swift */,
+				18736D5E26074BF900206170 /* NSNumber+Extension.swift */,
+				18736DDA26075BD600206170 /* Foundation+Extension.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -384,6 +426,7 @@
 				1888627A260642C000863269 /* UIColor+Extension.swift */,
 				1888629D2606C65800863269 /* UIButton+Extension.swift */,
 				188862A52606CBFC00863269 /* UIViewController+Extension.swift */,
+				18736D722607539200206170 /* UIEdgeInsets+Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -392,12 +435,16 @@
 			isa = PBXGroup;
 			children = (
 				18FDC9A82602309C00840378 /* Logger.swift */,
+				18736D4526071F6500206170 /* GDParameterEncoding.swift */,
 				185D062126062D5800DA0BEF /* GDCachingImageManager.swift */,
 				18FDCA61260241A200840378 /* GDSecurityTools.swift */,
 				18FDCA552602415C00840378 /* GDLanguageLocalize.swift */,
 				18A516202602EAF800425CC6 /* GD.generated.swift */,
 				18A516242602EE3000425CC6 /* Bundle+Extension.swift */,
 				1888626F2606336600863269 /* GDCommonTools.swift */,
+				18736D112606E95500206170 /* GDCache.swift */,
+				18736D192606EDCF00206170 /* Then.swift */,
+				18736D1D2606F2CD00206170 /* Protected.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -733,10 +780,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GDSwift_Example/Pods-GDSwift_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -751,10 +800,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GDSwift_Tests/Pods-GDSwift_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -840,14 +891,18 @@
 				185D063526062D5800DA0BEF /* GDPhotoPreviewDeleteViewController.swift in Sources */,
 				185D05FD2606285500DA0BEF /* GDBaseViewController.swift in Sources */,
 				18FDCA5A2602416F00840378 /* GDConstantAndMacro.swift in Sources */,
+				18736D2626071A5900206170 /* CharacterSet+Extension.swift in Sources */,
+				18736DD026075A4100206170 /* GDWebViewController.swift in Sources */,
 				185D062726062D5800DA0BEF /* GDProgressView.swift in Sources */,
 				185D063926062D5800DA0BEF /* GDCachingImageManager.swift in Sources */,
 				185D063326062D5800DA0BEF /* GDPhotoAlbumViewController.swift in Sources */,
 				18A516252602EE3000425CC6 /* Bundle+Extension.swift in Sources */,
 				18FDCA4A2602411200840378 /* UILabel+Extension.swift in Sources */,
 				1888629E2606C65800863269 /* UIButton+Extension.swift in Sources */,
+				18736D122606E95500206170 /* GDCache.swift in Sources */,
 				185D063226062D5800DA0BEF /* GDPhotoAlbumListViewController.swift in Sources */,
 				18FDCA62260241A200840378 /* GDSecurityTools.swift in Sources */,
+				18736DC22607593300206170 /* GDNavigator.swift in Sources */,
 				188862A22606C74800863269 /* GDBaseView.swift in Sources */,
 				185D063426062D5800DA0BEF /* GDPhotoClipViewController.swift in Sources */,
 				188862892606469800863269 /* GDCapturePhotoBaseViewController.swift in Sources */,
@@ -857,13 +912,22 @@
 				188862A62606CBFC00863269 /* UIViewController+Extension.swift in Sources */,
 				185D05C9260615D200DA0BEF /* GDEnvConfig.swift in Sources */,
 				185D06032606286F00DA0BEF /* GDBaseNavigationController.swift in Sources */,
+				18736D5926074A8700206170 /* GDParameterEncoding.swift in Sources */,
+				18736DDB26075BD600206170 /* Foundation+Extension.swift in Sources */,
 				185D063726062D5800DA0BEF /* GDPhotoBaseViewController.swift in Sources */,
+				18736D1A2606EDCF00206170 /* Then.swift in Sources */,
 				1888627B260642C000863269 /* UIColor+Extension.swift in Sources */,
 				188862852606454D00863269 /* GDFakeNavigationBar.swift in Sources */,
+				18736D1E2606F2CD00206170 /* Protected.swift in Sources */,
+				18736D5F26074BF900206170 /* NSNumber+Extension.swift in Sources */,
 				18FDCA742602426200840378 /* GDPopView.swift in Sources */,
 				188862642606321800863269 /* UIImage+Extension.swift in Sources */,
+				18736D732607539200206170 /* UIEdgeInsets+Extension.swift in Sources */,
+				18736D162606E9A700206170 /* GDCacheable.swift in Sources */,
 				185D062926062D5800DA0BEF /* GDPhotoCollectionViewCell.swift in Sources */,
 				18FDCA562602415C00840378 /* GDLanguageLocalize.swift in Sources */,
+				18736D0E2606E8F800206170 /* UIApplication+Extension.swift in Sources */,
+				18736D2226071A4A00206170 /* Array+Extension.swift in Sources */,
 				188862812606447600863269 /* CALayer+Extension.swift in Sources */,
 				185D063626062D5800DA0BEF /* GDPhotoNavigationViewController.swift in Sources */,
 				185D062626062D5800DA0BEF /* GDPhotoData.swift in Sources */,
@@ -1012,7 +1076,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1058,7 +1122,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -1079,7 +1143,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 0.0.2;
 				MODULE_NAME = ExampleApp;
@@ -1106,7 +1170,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 0.0.2;
 				MODULE_NAME = ExampleApp;
@@ -1148,7 +1212,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/GDSwift/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MARKETING_VERSION = 0.0.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -1196,7 +1260,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/GDSwift/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MARKETING_VERSION = 0.0.1;
 				MTL_FAST_MATH = YES;

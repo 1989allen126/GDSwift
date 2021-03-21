@@ -126,22 +126,26 @@ extension UIViewController {
         while result?.presentedViewController != nil {
             result = result?.presentedViewController
         }
-        
-        if result != nil {
-            /**取出当前控制器（UIViewController）*/
-            repeat {
-                if result!.isKind(of: UITabBarController.self),let rTabVC = result as? UITabBarController,rTabVC.selectedViewController != nil {
-                    result = rTabVC.selectedViewController
-                }
-                
-                if result!.isKind(of: UINavigationController.self),let navVC = result as? UINavigationController,navVC.visibleViewController != nil {
-                    result = navVC.visibleViewController
-                }
-            } while (result != nil && (result!.isKind(of: UITabBarController.self) || result!.isKind(of: UINavigationController.self)))
-        } else {
-            return result
+
+        return self.topViewController(result)
+    }
+    
+    fileprivate  class func topViewController(_ viewController: UIViewController? = nil) -> UIViewController? {
+        let viewController = viewController ?? UIApplication.shared.keyWindow?.rootViewController
+
+        if let navigationController = viewController as? UINavigationController,
+            !navigationController.viewControllers.isEmpty {
+            return self.topViewController(navigationController.viewControllers.last)
+
+        } else if let tabBarController = viewController as? UITabBarController,
+            let selectedController = tabBarController.selectedViewController {
+            return self.topViewController(selectedController)
+
+        } else if let presentedController = viewController?.presentedViewController {
+            return self.topViewController(presentedController)
+            
         }
         
-        return result
+        return viewController
     }
 }

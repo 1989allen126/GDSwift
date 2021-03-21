@@ -20,6 +20,7 @@
 //公共
 "GD.Global.common.cancel" = "Cancel";
 "GD.Global.common.done" = "Done";
+"GD.Global.common.confirm" = "OK";
 "GD.Global.common.know" = "I know";
 "GD.Global.common.delete" = "Delete";
 "GD.Global.common.setting" = "Setting";

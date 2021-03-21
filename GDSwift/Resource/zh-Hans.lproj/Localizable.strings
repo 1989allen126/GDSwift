@@ -21,6 +21,7 @@
 //公共
 "GD.Global.common.cancel" = "取消";
 "GD.Global.common.done" = "完成";
+"GD.Global.common.confirm" = "确定";
 "GD.Global.common.know" = "我知道了";
 "GD.Global.common.delete" = "删除";
 "GD.Global.common.setting" = "设置";

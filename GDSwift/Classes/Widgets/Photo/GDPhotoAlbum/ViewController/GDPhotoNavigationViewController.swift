@@ -12,10 +12,10 @@ import Photos
 // 主题色
 public var GDPhotoAlbumSkinColor = UIColor(red: 0, green: 147/255.0, blue: 1, alpha: 1) {
     didSet {
-        GDSelectSkinImage = UIImage.GDCreateImageWithView(view: GDPhotoNavigationViewController.GDGetSelectView())!
+        GDSelectSkinImage = UIImage.snapshotView(from: GDPhotoNavigationViewController.GDGetSelectView())!
     }
 }
-var GDSelectSkinImage: UIImage = UIImage.GDCreateImageWithView(view: GDPhotoNavigationViewController.GDGetSelectView())!
+var GDSelectSkinImage: UIImage =  UIImage.snapshotView(from: GDPhotoNavigationViewController.GDGetSelectView())!
 
 @objc public protocol GDPhotoAlbumProtocol: NSObjectProtocol {
     //返回图片原资源，需要用PHCachingImageManager或者我封装的GDCachingImageManager进行解析处理

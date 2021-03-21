@@ -50,6 +50,8 @@ extension UIViewController {
 
 class GDBaseViewController: UIViewController {
 
+    public let navigator = GDNavigator.default
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

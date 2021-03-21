@@ -13,15 +13,9 @@ extension Bundle {
     @objc public class var gdResourceBundle: Bundle {
         struct Static {
             static let _gdResourceBundle: Bundle = {
-                var bundle = GD.hostingBundle
-                if let path = bundle.path(forResource: "GDSwiftResourceBundle.bundle", ofType: nil), let resourcesBundle = Bundle(path: path) {
-                    return resourcesBundle
-                }
-
-                if let resourceBundleUrl = bundle.url(forResource: "GDBundleResource", withExtension: "bundle"), let resourcesBundle = Bundle(url: resourceBundleUrl) {
-                    return resourcesBundle
-                }
-                return bundle
+                var sourceBundle = GD.hostingBundle
+                let bundleURL = sourceBundle.url(forResource: "GDBundleResource", withExtension: "bundle")
+                return bundleURL.flatMap(Bundle.init(url:)) ?? sourceBundle
             }()
         }
 

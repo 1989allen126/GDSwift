@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +17,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="NvE-KQ-jjd"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qgJ-FM-BcS"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xVL-pn-EwU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-642" y="136"/>
+            <point key="canvasLocation" x="-746" y="39"/>
         </scene>
         <!--Photo Demo View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -91,7 +92,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="136.28185907046478"/>
+            <point key="canvasLocation" x="446" y="-816"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RPK-ft-oa7">
+            <objects>
+                <viewController id="GU0-xw-VPW" customClass="ViewController" customModule="GDSwift_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VN4-fu-dGi"/>
+                        <viewControllerLayoutGuide type="bottom" id="JJI-yp-vP4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uvl-KS-pke">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2et-Z7-m72"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bDR-od-dBU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="446" y="40"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

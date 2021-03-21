@@ -36,6 +36,7 @@ GDSwift集成常用组件
   s.subspec "Widgets" do |ss|
     ss.source_files  = "GDSwift/Classes/Widgets/**/*"
     ss.dependency "SnapKit"
+    ss.dependency "Hero"
     ss.dependency "GDSwift/Core"
   end
 

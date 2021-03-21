@@ -337,8 +337,8 @@ class GDAlbumBottomView: UIView {
         button.clipsToBounds = true
         button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
         button.setTitle(GDLocalizedString(key: "GD.Global.common.done"), for: .normal)
-        button.setBackgroundImage(UIImage.GDCreateImageWithColor(color: GDPhotoAlbumSkinColor), for: .normal)
-        button.setBackgroundImage(UIImage.GDCreateImageWithColor(color: GDPhotoAlbumSkinColor.withAlphaComponent(0.5)), for: .disabled)
+        button.setBackgroundImage(UIImage.pixel(ofColor: GDPhotoAlbumSkinColor), for: .normal)
+        button.setBackgroundImage(UIImage.pixel(ofColor: GDPhotoAlbumSkinColor.withAlphaComponent(0.5)), for: .disabled)
         button.setTitleColor(UIColor(white: 0.5, alpha: 1), for: .disabled)
         button.setTitleColor(UIColor.white, for: .normal)
         button.addTarget(self, action: #selector(sureClick(button:)), for: .touchUpInside)

@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import SnapKit
 
-// MARK: - Create your borders and assign them to a property on a view when you can via the create methods when possible. Otherwise you might end up with multiple borders being created.
-extension UIView {
+class GDBaseView: UIView {
 
+    // MARK: - Create your borders and assign them to a property on a view when you can via the create methods when possible. Otherwise you might end up with multiple borders being created.
     enum BorderSide {
         case left, top, right, bottom
     }
@@ -113,16 +114,4 @@ extension UIView {
         }
         return border
     }
-}
-
-class GDBaseView: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
-
 }

@@ -76,7 +76,6 @@
 		FD846F222233A5E10038A715 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FD846F1F2233A5E10038A715 /* README.md */; };
 		FD846F232233A5E10038A715 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FD846F202233A5E10038A715 /* LICENSE */; };
 		FD846F242233A5E10038A715 /* GDSwift.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FD846F212233A5E10038A715 /* GDSwift.podspec */; };
-		FD846FC82233CA7B0038A715 /* GDSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD846F6E2233AF970038A715 /* GDSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,7 +206,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD846FC82233CA7B0038A715 /* GDSwift.framework in Frameworks */,
 				6E6189F9CCB9B7D03129E4BB /* Pods_GDSwift_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

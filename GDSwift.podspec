@@ -32,12 +32,12 @@ GDSwift集成常用组件
   s.subspec "Core" do |ss|
     ss.source_files  = "GDSwift/Classes/Core/**/*"
     ss.frameworks = 'UIKit', 'Foundation'
+    ss.dependency "SnapKit"
   end
   
   s.subspec "Widgets" do |ss|
     ss.source_files  = "GDSwift/Classes/Widgets/**/*"
     ss.frameworks = 'UIKit', 'Foundation', 'CoreServices', 'AVFoundation'
-    ss.dependency "SnapKit"
     ss.dependency "Hero"
     ss.dependency "GDSwift/Core"
   end

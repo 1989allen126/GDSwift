@@ -1,9 +1,9 @@
 PODS:
-  - GDSwift/Core (0.0.1)
+  - GDSwift/Core (0.0.1):
+    - SnapKit
   - GDSwift/Widgets (0.0.1):
     - GDSwift/Core
     - Hero
-    - SnapKit
   - Hero (1.6.1)
   - SnapKit (5.0.1)
 
@@ -22,7 +22,7 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  GDSwift: 027308a5d4867cf93018ed80c300c0ab6474afef
+  GDSwift: e5d82d151bf76f82f5c7763e8616bc518f8d6d40
   Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 

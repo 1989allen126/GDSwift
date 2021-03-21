@@ -51,7 +51,7 @@ extension GDCapturePhotoBaseViewController: UIImagePickerControllerDelegate, UIN
                 }
                 alert.addAction(confirm)
 
-                let cancel = UIAlertAction(title: R.string.localizable.globalCommonCancel(), style: .default) { (_) in
+                let cancel = UIAlertAction(title: GDLocalizedString(key: "GD.Camera.Auth.cancel"), style: .default) { (_) in
 
                 }
                 alert.addAction(cancel)

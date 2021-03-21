@@ -27,7 +27,7 @@ target 'GDSwift_Example' do
   
   #gd_common_pods
   # GDSwift
-  pod 'GDSwift/Widgets', :path => './'
+  pod 'GDSwift', :path => './'
 end
 
 post_install do |installer|

@@ -58,7 +58,7 @@ extension PhotoDemoViewController:GDPhotoAlbumProtocol {
     }
     
     @IBAction func buttonClick(_ sender: UIButton) {
-//        GDPhotoAlbumSkinColor = UIColor.red   //修改主题色
+        GDPhotoAlbumSkinColor = UIColor.red   //修改主题色
         let photoAlbumVC = GDPhotoNavigationViewController(photoAlbumDelegate: self, photoAlbumType: .selectPhoto)    //初始化需要设置代理对象
         photoAlbumVC.maxSelectCount = 5    //最大可选择张数
         self.navigationController?.present(photoAlbumVC, animated: true, completion: nil)

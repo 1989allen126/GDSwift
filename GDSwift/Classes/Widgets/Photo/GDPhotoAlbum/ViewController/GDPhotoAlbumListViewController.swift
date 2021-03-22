@@ -13,6 +13,7 @@ import SnapKit
 class GDPhotoAlbumListViewController: GDPhotoBaseViewController, UITableViewDelegate, UITableViewDataSource {
 
     weak var photoAlbumDelegate: GDPhotoAlbumProtocol?
+    var maxSelectCount = 0
     var type: GDPhotoAlbumType = .selectPhoto
     
     private var albumsList: [(assetCollection:PHAssetCollection, assetsFetchResult: PHFetchResult<PHAsset>)] = []
@@ -86,7 +87,7 @@ class GDPhotoAlbumListViewController: GDPhotoBaseViewController, UITableViewDele
         }
         albumsCell?.albumName = album.localizedTitle
         let photoResult = PHAsset.fetchAssets(in: album, options: nil)
-        if photoResult.count != 0 {
+        if photoResult.count > 0 {
             let asset = photoResult.lastObject
             _ = GDCachingImageManager.default().requestThumbnailImage(for: asset!, resultHandler: { (image: UIImage?, dictionry: Dictionary?) in
                 albumsCell?.albumImage = image
@@ -102,6 +103,7 @@ class GDPhotoAlbumListViewController: GDPhotoBaseViewController, UITableViewDele
         photoAlbumViewController.assetsFetchResult = assetsFetchResult
         photoAlbumViewController.photoAlbumDelegate = self.photoAlbumDelegate
         photoAlbumViewController.type = self.type
+        photoAlbumViewController.maxSelectCount = maxSelectCount
         self.navigationController?.pushViewController(photoAlbumViewController, animated: true)
     }
 

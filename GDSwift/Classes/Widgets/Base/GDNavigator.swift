@@ -15,7 +15,7 @@ protocol GDNavigatable {
     var navigator: GDNavigatable { get set }
 }
 
-class GDNavigator {
+public class GDNavigator {
     static var `default` = GDNavigator()
 
     // MARK: - segues list, all app scenes
@@ -106,20 +106,17 @@ class GDNavigator {
         case .customModal(let type):
             // present modally with custom animation
             DispatchQueue.main.async {
-                let nav = GDBaseNavigationController(rootViewController: target)
-                nav.hero.modalAnimationType = .autoReverse(presenting: type)
-                finalSender?.present(nav, animated: true, completion: nil)
+                finalSender?.navigationController?.hero.modalAnimationType = .autoReverse(presenting: type)
+                finalSender?.present(target, animated: true, completion: nil)
             }
         case .modal:
             // present modally
             DispatchQueue.main.async {
-                let nav = GDBaseNavigationController(rootViewController: target)
-                finalSender?.present(nav, animated: true, completion: nil)
+                finalSender?.present(target, animated: true, completion: nil)
             }
         case .detail:
             DispatchQueue.main.async {
-                let nav = GDBaseNavigationController(rootViewController: target)
-                finalSender?.showDetailViewController(nav, sender: nil)
+                finalSender?.showDetailViewController(target, sender: nil)
             }
         case .alert:
             DispatchQueue.main.async {

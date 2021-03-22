@@ -9,7 +9,7 @@ import UIKit
 open class GD {
     fileprivate class Class {}
     
-    public static let hostingBundle = Bundle(for: GD.Class.self)
+    static let hostingBundle = Bundle(for: GD.Class.self)
     
     static let IPhoneX = {
         return isIPhoneXSeries()

@@ -35,7 +35,7 @@ extension GDCapturePhotoBaseViewController: UIImagePickerControllerDelegate, UIN
         return
         #else
 
-        checkCameraAuthStatusEx { [weak self] (granted) in
+       gdcheckCameraAuthStatusEx { [weak self] (granted) in
             if(granted) {
                 let sourceType = UIImagePickerController.SourceType.camera
                 let imagePicker = UIImagePickerController()

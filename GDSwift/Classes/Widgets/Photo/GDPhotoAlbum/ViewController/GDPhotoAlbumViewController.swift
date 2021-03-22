@@ -194,7 +194,7 @@ class GDPhotoAlbumViewController: GDPhotoBaseViewController, PHPhotoLibraryChang
     }
     
     private func completedButtonShow() {
-        if self.photoData.seletedAssetArray.count > 0 {
+        if !self.photoData.seletedAssetArray.isEmpty {
             self.bottomView.rightButtonTitle =  String(format: GDLocalizedString(key: "GD.Photo.text.finished"), "\(self.photoData.seletedAssetArray.count)")
             self.bottomView.buttonIsEnabled = true
         } else {
@@ -213,6 +213,7 @@ class GDPhotoAlbumViewController: GDPhotoBaseViewController, PHPhotoLibraryChang
     // MARK:- handle events
     private func gotoPreviewViewController(previewArray: [PHAsset], currentIndex: Int) {
         let previewVC = GDPhotoPreviewViewController()
+        previewVC.naviView.backgroundColor = naviView.backgroundColor
         previewVC.maxSelectCount = maxSelectCount
         previewVC.currentIndex = currentIndex
         previewVC.photoData = self.photoData
@@ -226,6 +227,7 @@ class GDPhotoAlbumViewController: GDPhotoBaseViewController, PHPhotoLibraryChang
     private func gotoClipViewController(photoImage: UIImage) {
         let clipVC = GDPhotoClipViewController()
         clipVC.clipBounds = self.clipBounds
+        clipVC.naviView.backgroundColor = naviView.backgroundColor
         clipVC.photoImage = photoImage
         clipVC.sureClicked = { [unowned self] (clipPhoto: UIImage?) in
             if self.photoAlbumDelegate != nil, self.photoAlbumDelegate!.responds(to: #selector(GDPhotoAlbumProtocol.photoAlbum(clipPhoto:))) {
@@ -389,23 +391,28 @@ class GDAlbumBottomView: UIView {
     
     init(frame: CGRect, type: GDAlbumBottomViewType) {
         super.init(frame: frame)
-        self.backgroundColor = UIColor(white: 0.1, alpha: 0.9)
         if type == .normal {
             self.addSubview(self.previewButton)
         }
-        
+        setupUIElements()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupUIElements()
+
+    }
+    
+    func setupUIElements() {
+        self.backgroundColor = UIColor(white: 0.1, alpha: 0.9)
         self.addSubview(self.sureButton)
         let cutLine = UIView()
         cutLine.backgroundColor = UIColor(hex: "#DFDFDF")
         self.addSubview(cutLine)
         cutLine.snp.makeConstraints({
-            $0.left.right.bottom.equalToSuperview()
+            $0.left.right.top.equalToSuperview()
             $0.height.equalTo(0.5)
         })
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     //MARK: handle events

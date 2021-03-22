@@ -28,7 +28,6 @@
 		18736D0E2606E8F800206170 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18736D0D2606E8F800206170 /* UIApplication+Extension.swift */; };
 		18736D122606E95500206170 /* GDCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18736D112606E95500206170 /* GDCache.swift */; };
 		18736D162606E9A700206170 /* GDCacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18736D152606E9A700206170 /* GDCacheable.swift */; };
-		18736D1A2606EDCF00206170 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18736D192606EDCF00206170 /* Then.swift */; };
 		18736D1E2606F2CD00206170 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18736D1D2606F2CD00206170 /* Protected.swift */; };
 		18736D2226071A4A00206170 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18736D2126071A4A00206170 /* Array+Extension.swift */; };
 		18736D2626071A5900206170 /* CharacterSet+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18736D2526071A5900206170 /* CharacterSet+Extension.swift */; };
@@ -51,7 +50,6 @@
 		188862A22606C74800863269 /* GDBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188862A12606C74800863269 /* GDBaseView.swift */; };
 		188862A62606CBFC00863269 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188862A52606CBFC00863269 /* UIViewController+Extension.swift */; };
 		18A516212602EAF900425CC6 /* GD.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A516202602EAF800425CC6 /* GD.generated.swift */; };
-		18A516252602EE3000425CC6 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A516242602EE3000425CC6 /* Bundle+Extension.swift */; };
 		18FDC97E26022F4500840378 /* GDSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 18FDC97C26022F4400840378 /* GDSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		18FDC9AD2602309C00840378 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FDC9A12602309C00840378 /* LaunchScreen.xib */; };
 		18FDC9AE2602309C00840378 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FDC9A32602309C00840378 /* Main.storyboard */; };
@@ -133,7 +131,6 @@
 		18736D0D2606E8F800206170 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		18736D112606E95500206170 /* GDCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDCache.swift; sourceTree = "<group>"; };
 		18736D152606E9A700206170 /* GDCacheable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDCacheable.swift; sourceTree = "<group>"; };
-		18736D192606EDCF00206170 /* Then.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
 		18736D1D2606F2CD00206170 /* Protected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protected.swift; sourceTree = "<group>"; };
 		18736D2126071A4A00206170 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		18736D2526071A5900206170 /* CharacterSet+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterSet+Extension.swift"; sourceTree = "<group>"; };
@@ -155,7 +152,6 @@
 		188862A12606C74800863269 /* GDBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDBaseView.swift; sourceTree = "<group>"; };
 		188862A52606CBFC00863269 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		18A516202602EAF800425CC6 /* GD.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GD.generated.swift; sourceTree = "<group>"; };
-		18A516242602EE3000425CC6 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		18FDC97C26022F4400840378 /* GDSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSwift.h; sourceTree = "<group>"; };
 		18FDC97D26022F4400840378 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18FDC9A22602309C00840378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -431,10 +427,8 @@
 				18FDCA61260241A200840378 /* GDSecurityTools.swift */,
 				18FDCA552602415C00840378 /* GDLanguageLocalize.swift */,
 				18A516202602EAF800425CC6 /* GD.generated.swift */,
-				18A516242602EE3000425CC6 /* Bundle+Extension.swift */,
 				1888626F2606336600863269 /* GDCommonTools.swift */,
 				18736D112606E95500206170 /* GDCache.swift */,
-				18736D192606EDCF00206170 /* Then.swift */,
 				18736D1D2606F2CD00206170 /* Protected.swift */,
 			);
 			path = Utils;
@@ -888,7 +882,6 @@
 				185D062726062D5800DA0BEF /* GDProgressView.swift in Sources */,
 				185D063926062D5800DA0BEF /* GDCachingImageManager.swift in Sources */,
 				185D063326062D5800DA0BEF /* GDPhotoAlbumViewController.swift in Sources */,
-				18A516252602EE3000425CC6 /* Bundle+Extension.swift in Sources */,
 				18FDCA4A2602411200840378 /* UILabel+Extension.swift in Sources */,
 				1888629E2606C65800863269 /* UIButton+Extension.swift in Sources */,
 				18736D122606E95500206170 /* GDCache.swift in Sources */,
@@ -907,7 +900,6 @@
 				18736D5926074A8700206170 /* GDParameterEncoding.swift in Sources */,
 				18736DDB26075BD600206170 /* Foundation+Extension.swift in Sources */,
 				185D063726062D5800DA0BEF /* GDPhotoBaseViewController.swift in Sources */,
-				18736D1A2606EDCF00206170 /* Then.swift in Sources */,
 				1888627B260642C000863269 /* UIColor+Extension.swift in Sources */,
 				188862852606454D00863269 /* GDFakeNavigationBar.swift in Sources */,
 				18736D1E2606F2CD00206170 /* Protected.swift in Sources */,

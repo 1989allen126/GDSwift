@@ -103,7 +103,7 @@ class GDPhotoPreviewViewController: GDPhotoBaseViewController, UICollectionViewD
     }
     
     private func completedButtonShow() {
-        if self.photoData.seletedAssetArray.count > 0 {
+        if !self.photoData.seletedAssetArray.isEmpty {
             self.bottomView.rightButtonTitle = String(format: GDLocalizedString(key: "GD.Photo.text.finished"), "\(self.photoData.seletedAssetArray.count)")
             self.bottomView.buttonIsEnabled = true
         } else {

@@ -15,7 +15,12 @@ public var GDPhotoAlbumSkinColor = UIColor(red: 0, green: 147/255.0, blue: 1, al
         GDSelectSkinImage = UIImage.snapshotView(from: GDPhotoNavigationViewController.GDGetSelectView())!
     }
 }
+
+public var GDPhotoAlbumNavigationBarBgColor = UIColor(white: 0.1, alpha: 0.9)
+
 var GDSelectSkinImage: UIImage =  UIImage.snapshotView(from: GDPhotoNavigationViewController.GDGetSelectView())!
+
+fileprivate var kAlbumMaxSelectCount:Int = 0
 
 @objc public protocol GDPhotoAlbumProtocol: NSObjectProtocol {
     //返回图片原资源，需要用PHCachingImageManager或者我封装的GDCachingImageManager进行解析处理
@@ -38,9 +43,10 @@ public enum GDPhotoAlbumType {
 public class GDPhotoNavigationViewController: UINavigationController {
 
     // 最大选择张数
-    public var maxSelectCount = 0 {
+    public var maxSelectCount:Int  = 0 {
         didSet {
             self.photoAlbumVC.maxSelectCount = maxSelectCount
+            self.photoAlbumListVC.maxSelectCount = maxSelectCount
         }
     }
     
@@ -52,13 +58,13 @@ public class GDPhotoNavigationViewController: UINavigationController {
     }
     
     private let photoAlbumVC = GDPhotoAlbumViewController()
+    private let photoAlbumListVC = GDPhotoAlbumListViewController()
     
     private convenience init() {
         self.init(photoAlbumDelegate: nil, photoAlbumType: .selectPhoto)
     }
     
     public init(photoAlbumDelegate: GDPhotoAlbumProtocol?, photoAlbumType: GDPhotoAlbumType) {
-        let photoAlbumListVC = GDPhotoAlbumListViewController()
         photoAlbumListVC.photoAlbumDelegate = photoAlbumDelegate
         photoAlbumListVC.type = photoAlbumType
         super.init(rootViewController: photoAlbumListVC)

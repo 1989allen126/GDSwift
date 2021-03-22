@@ -25,7 +25,7 @@ public class GDPhotoBaseViewController: UIViewController {
         let titleLabel = UILabel(frame: CGRect(x: ScreenWidth/2-50, y: NaviBarHeight - 44, width: 100, height: 44))
         titleLabel.textAlignment = .center
         titleLabel.textColor = UIColor.white
-        titleLabel.font = UIFont.systemFont(ofSize: 17)
+        titleLabel.font = GDMFont(18.0)
         return titleLabel
     }()
     
@@ -64,7 +64,7 @@ public class GDPhotoBaseViewController: UIViewController {
     
     fileprivate func setNavigationView() {
         
-        naviView.backgroundColor = UIColor(white: 0.1, alpha: 0.9)
+        naviView.backgroundColor = GDPhotoAlbumNavigationBarBgColor
         view.addSubview(naviView)
     }
     

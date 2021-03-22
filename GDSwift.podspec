@@ -20,11 +20,11 @@ GDSwift集成常用组件
 
   s.ios.deployment_target = '10.0'
   s.swift_version         = '5.1'
-  #s.resource     = ['GDSwift/Resource/*']
+  s.resource     = ['GDSwift/Resource/*']
   #s.resource = ['GDSwift/Resource/Assets']
-  s.resource_bundle = {
-        'GDBundleResource' => ['GDSwift/Resource/*']
-  }
+#  s.resource_bundle = {
+#        'GDBundleResource' => ['GDSwift/Resource/*']
+#  }
   s.source_files = 'GDSwift/Classes/**/*'
 
   #s.default_subspec = "Core"

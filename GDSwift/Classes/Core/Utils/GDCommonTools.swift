@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 /// 检测相机权限
-func checkCameraAuthStatus() -> Bool {
+public func gdcheckCameraAuthStatus() -> Bool {
     let status = AVCaptureDevice.authorizationStatus(for: AVMediaType.video)
     switch status {
     case .authorized, .notDetermined:
@@ -22,7 +22,7 @@ func checkCameraAuthStatus() -> Bool {
 
 /// 检测相机权限
 /// - Parameter handle: 完成回调
-func checkCameraAuthStatusEx(_ handle: ((Bool) -> Void)? = nil) {
+public func gdcheckCameraAuthStatusEx(_ handle: ((Bool) -> Void)? = nil) {
     DispatchQueue.main.async {
         let status = AVCaptureDevice.authorizationStatus(for: AVMediaType.video)
         switch status {
@@ -43,7 +43,7 @@ func checkCameraAuthStatusEx(_ handle: ((Bool) -> Void)? = nil) {
 
 /// 快速打开url
 /// - Parameter content: 需要跳转的url
-func GDOpenURL(url:URL) {
+public func GDOpenURL(url:URL) {
     if UIApplication.shared.canOpenURL(url) {
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
@@ -54,7 +54,7 @@ func GDOpenURL(url:URL) {
 }
 
 /// 打开系统设置页面
-func GDOpenURLSetting() {
+public func GDOpenURLSetting() {
     guard let url = URL(string: UIApplication.openSettingsURLString) else {
         return
     }
@@ -64,7 +64,7 @@ func GDOpenURLSetting() {
 /// 判断字符串是否为空
 /// - Parameter content: 字符串内容
 /// - Returns: true/false
-func isEmptyString(content: String?) -> Bool {
+public func isEmptyString(content: String?) -> Bool {
     guard let content = content, !content.isEmpty else {
         return true
     }
@@ -77,7 +77,7 @@ func isEmptyString(content: String?) -> Bool {
 ///   - content: 字符串内容
 ///   - ify: placeholder
 /// - Returns: 结果
-func emptyString(content: String?, ify: String = "") -> String {
+public func emptyString(content: String?, ify: String = "") -> String {
     guard let content = content, !content.isEmpty else {
         return ify
      }
@@ -86,7 +86,7 @@ func emptyString(content: String?, ify: String = "") -> String {
 }
 
 //验证手机号
-func isTelNumber(num:String)->Bool {
+public func isTelNumber(num:String)->Bool {
     
     let mobile = "^1(7[0-9]|3[0-9]|5[0-35-9]|8[025-9])\\d{8}$"
     let  CM = "^1(34[0-8]|(3[5-9]|5[017-9]|8[278])\\d)\\d{7}$"
@@ -109,7 +109,7 @@ func isTelNumber(num:String)->Bool {
 /// 判断是否为数字
 /// - Parameter num: 字符串
 /// - Returns: true/false
-func isNumber(num: String) -> Bool {
+public func isNumber(num: String) -> Bool {
    let scan: Scanner = Scanner(string: num)
    var val:Int = 0
    return scan.scanInt(&val) && scan.isAtEnd
@@ -121,7 +121,7 @@ func isNumber(num: String) -> Bool {
 ///   - regex: 匹配规则
 ///   - validateString: 匹配对test象
 /// - Returns: 返回结果
-func regularExpression (regex: String, validateString: String) -> [String] {
+public func regularExpression (regex: String, validateString: String) -> [String] {
     do {
         let regex: NSRegularExpression = try NSRegularExpression(pattern: regex, options: [])
         let matches = regex.matches(in: validateString, options: [], range: NSRange(location: 0, length: validateString.count))
@@ -145,7 +145,7 @@ func regularExpression (regex: String, validateString: String) -> [String] {
 ///   - regex: 匹配规则
 ///   - content: 替换内容
 /// - Returns: 结果
-func replace(validateString: String, regex: String, content: String) -> String {
+public func replace(validateString: String, regex: String, content: String) -> String {
     do {
         let RE = try NSRegularExpression(pattern: regex, options: .caseInsensitive)
         let modified = RE.stringByReplacingMatches(in: validateString, options: .reportProgress, range: NSRange(location: 0, length: validateString.count), withTemplate: content)

@@ -14,9 +14,9 @@ import Foundation
   import UIKit.UIGeometry
 #endif
 
-public protocol Then {}
+public protocol GBThen {}
 
-public extension Then where Self: Any {
+public extension GBThen where Self: Any {
 
   /// Makes it available to set properties with closures just after initializing and copying the value types.
   ///
@@ -25,7 +25,7 @@ public extension Then where Self: Any {
   ///       $0.size.width = 100
   ///     }
   @inlinable
-  public func with(_ block: (inout Self) throws -> Void) rethrows -> Self {
+  func with(_ block: (inout Self) throws -> Void) rethrows -> Self {
     var copy = self
     try block(&copy)
     return copy
@@ -39,13 +39,13 @@ public extension Then where Self: Any {
   ///       $0.synchronize()
   ///     }
   @inlinable
-  public func `do`(_ block: (Self) throws -> Void) rethrows {
+  func `do`(_ block: (Self) throws -> Void) rethrows {
     try block(self)
   }
 
 }
 
-extension Then where Self: AnyObject {
+public extension GBThen where Self: AnyObject {
 
   /// Makes it available to set properties with closures just after initializing.
   ///
@@ -55,28 +55,28 @@ extension Then where Self: AnyObject {
   ///       $0.text = "Hello, World!"
   ///     }
   @inlinable
-  public func then(_ block: (Self) throws -> Void) rethrows -> Self {
+  func then(_ block: (Self) throws -> Void) rethrows -> Self {
     try block(self)
     return self
   }
 
 }
 
-extension NSObject: Then {}
+extension NSObject: GBThen {}
 
 #if !os(Linux)
-  extension CGPoint: Then {}
-  extension CGRect: Then {}
-  extension CGSize: Then {}
-  extension CGVector: Then {}
+  extension CGPoint: GBThen {}
+  extension CGRect: GBThen {}
+  extension CGSize: GBThen {}
+  extension CGVector: GBThen {}
 #endif
 
-extension Array: Then {}
-extension Dictionary: Then {}
-extension Set: Then {}
+extension Array: GBThen {}
+extension Dictionary: GBThen {}
+extension Set: GBThen {}
 
 #if os(iOS) || os(tvOS)
-  extension UIEdgeInsets: Then {}
-  extension UIOffset: Then {}
-  extension UIRectEdge: Then {}
+  extension UIEdgeInsets: GBThen {}
+  extension UIOffset: GBThen {}
+  extension UIRectEdge: GBThen {}
 #endif

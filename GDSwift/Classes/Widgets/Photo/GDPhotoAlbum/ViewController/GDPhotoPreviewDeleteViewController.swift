@@ -99,7 +99,7 @@ public class GDPhotoPreviewDeleteViewController: GDPhotoBaseViewController, UICo
                 if self.deleteClicked != nil {
                     self.deleteClicked!(self.previewPhotoArray, deleteIndex)
                 }
-                if self.previewPhotoArray.count == 0 {
+                if self.previewPhotoArray.isEmpty {
                     self.navigationController!.popViewController(animated: true)
                 }
             })

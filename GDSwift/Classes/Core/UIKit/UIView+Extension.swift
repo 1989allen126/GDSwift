@@ -166,7 +166,7 @@ public extension UIView {
         }
     }
 
-    var hight: CGFloat {
+    var height: CGFloat {
         get {
             return self.frame.size.height
         }
@@ -249,13 +249,13 @@ public extension UIView {
 
     var bottomRight: CGPoint {
         let x: CGFloat = self.x + self.width
-        let y: CGFloat = self.y + self.hight
+        let y: CGFloat = self.y + self.height
         return CGPoint(x: x, y: y)
     }
 
     var bottomLeft: CGPoint {
         let x: CGFloat = self.x
-        let y: CGFloat = self.y + self.hight
+        let y: CGFloat = self.y + self.height
         return CGPoint(x: x, y: y)
     }
 
@@ -285,10 +285,10 @@ public extension UIView {
 
     var bottom: CGFloat {
         get {
-            return self.y + self.hight
+            return self.y + self.height
         }
         set {
-            self.y = newValue - self.hight
+            self.y = newValue - self.height
         }
     }
 
